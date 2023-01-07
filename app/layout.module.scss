@@ -1,9 +1,8 @@
 .container {
   width: 100%;
-  max-width: 1920px;
-  min-height: 810px;
   height: 100%;
   display: grid;
+  margin: 0 auto;
   grid-template-columns: 1fr;
   grid-template-rows: 10% 56% 1fr;
 }
@@ -36,5 +35,39 @@
     aspect-ratio: 16 / 9;
     background-color: yellow;
     overflow-x: hidden;
+  }
+}
+
+// min-aspect-ratio がsassのネスト内だと効かなかった
+@media screen and (min-aspect-ratio: 16/9) {
+  .container {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    display: grid;
+    grid-template-columns: 27% 56% 1fr;
+    grid-template-rows: 1fr;
+  }
+  .bgImage {
+    grid-row: 1;
+    grid-column: 1 / 4;
+    object-fit: contain;
+    height: auto;
+  }
+  .header {
+    grid-row: 1;
+    // HACK: 無理やり指定
+    grid-column: 1 / 4;
+  }
+  .main {
+    grid-row: 1;
+    grid-column: 2;
+    width: 100%;
+    padding-top: 10%;
+
+    main {
+      width: 100%;
+      height: 56%;
+    }
   }
 }
