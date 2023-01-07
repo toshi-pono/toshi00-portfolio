@@ -1,8 +1,9 @@
 import Image from 'next/image'
-import 'styles/globals.scss'
-import styles from './layout.module.scss'
 
 import backgroundTV from 'assets/tv.svg'
+
+import 'styles/globals.scss'
+import styles from './layout.module.scss'
 
 export default function RootLayout({
   children,
