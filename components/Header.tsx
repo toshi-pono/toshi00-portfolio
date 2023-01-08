@@ -11,17 +11,11 @@ const notoSansJP = Noto_Sans_JP({
   weight: ['400', '500'],
 })
 
-interface Props {
-  className?: string
-}
-
-const Header = ({ className }: Props) => {
+const Header = () => {
   const pathname = usePathname()
 
   return (
-    <header
-      className={`${styles.header} ${notoSansJP.className} ${className ?? ''}`}
-    >
+    <header className={`${styles.header} ${notoSansJP.className}`}>
       <Link className={styles.title} href="/">
         toshi00.dev
       </Link>
