@@ -25,6 +25,7 @@ export default function RootLayout({
             width={1920}
             height={1080}
             className={styles.bgImage}
+            draggable={false}
           />
           <div className={styles.header}>
             <Header />
@@ -37,6 +38,7 @@ export default function RootLayout({
               width={581}
               height={662}
               className={styles.rukachi}
+              draggable={false}
             />
           </div>
           <div className={styles.footer}>
