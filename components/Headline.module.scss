@@ -1,0 +1,11 @@
+@import 'styles/variables';
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: $color-text;
+  padding-left: 8px;
+  border-bottom: 2px solid $color-primary;
+  border-left: 8px solid $color-primary;
+  margin: 0px;
+}
