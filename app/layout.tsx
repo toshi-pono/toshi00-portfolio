@@ -1,5 +1,8 @@
 import Image from 'next/image'
 
+import Header from 'components/Header'
+
+import rukachi from 'assets/rukachi.svg'
 import backgroundTV from 'assets/tv.svg'
 
 import 'styles/globals.scss'
@@ -11,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="jp">
       <head />
       <body>
         <div className={styles.container}>
@@ -22,11 +25,16 @@ export default function RootLayout({
             height={1080}
             className={styles.bgImage}
           />
-          <div className={styles.header}>
-            <p>toshi00.dev</p>
-          </div>
+          <Header className={styles.header} />
           <div className={styles.main}>
             <main>{children}</main>
+            <Image
+              src={rukachi}
+              alt=""
+              width={581}
+              height={662}
+              className={styles.rukachi}
+            />
           </div>
         </div>
       </body>
