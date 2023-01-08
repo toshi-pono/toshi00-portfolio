@@ -1,0 +1,52 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 24px;
+  justify-content: center;
+  height: 100%;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      width: 80%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      margin: 0px auto;
+      margin-bottom: 16px;
+      border-radius: 25%;
+    }
+
+    .name {
+      font-size: 32px;
+      margin: 4px;
+      text-align: center;
+    }
+
+    .description {
+      font-size: 0.9rem;
+      text-align: center;
+      margin: 0px;
+    }
+  }
+
+  .article {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+    align-items: flex-end;
+    height: 100%;
+
+    & > div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    & :nth-child(2) {
+      align-self: flex-start;
+    }
+  }
+}
