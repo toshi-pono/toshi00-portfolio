@@ -1,0 +1,41 @@
+@import 'styles/variables';
+
+.header {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 16px;
+  padding-bottom: 16px;
+  color: $color-text;
+
+  .title {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0px;
+    text-decoration: none;
+    color: $color-text;
+  }
+
+  .navigation {
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    gap: 8px;
+
+    a {
+      text-decoration: none;
+      color: $color-text;
+      padding: 4px 8px;
+      transition: transform ease-in-out 0.2s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .active {
+      border-bottom: 2px solid $color-text;
+    }
+  }
+}
