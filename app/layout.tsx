@@ -30,16 +30,20 @@ export default function RootLayout({
           <div className={styles.header}>
             <Header />
           </div>
-          <div className={styles.main}>
-            <main>{children}</main>
-            <Image
-              src={rukachi}
-              alt=""
-              width={581}
-              height={662}
-              className={styles.rukachi}
-              draggable={false}
-            />
+          <div className={styles.mainWrapper}>
+            <div className={styles.main}>
+              <main className={styles.article}>
+                <div>{children}</div>
+              </main>
+              <Image
+                src={rukachi}
+                alt=""
+                width={581}
+                height={662}
+                className={styles.rukachi}
+                draggable={false}
+              />
+            </div>
           </div>
           <div className={styles.footer}>
             <Footer />

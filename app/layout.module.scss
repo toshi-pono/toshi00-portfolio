@@ -50,21 +50,35 @@
   -webkit-user-drag: none;
 }
 
+/* firefox で grid直下の要素に対する横幅の調整が効かなかったのでwrapして指定 */
+.mainWrapper {
+  width: 100%;
+  grid-row: 2;
+  grid-column: 1;
+}
+
 .main {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  grid-row: 2;
-  grid-column: 1;
   height: 100%;
   aspect-ratio: 21 / 10;
   justify-self: center;
+  margin: 0 auto;
 
-  & > main {
+  .article {
     height: 100%;
+    width: auto;
     aspect-ratio: 16 / 9;
     background-color: $color-bg;
     overflow-x: hidden;
+
+    /* safari(15.6.1) で aspect-ratio の計算にpaddingが含まれなかったので、paddingを内部でとる */
+    & > div {
+      height: 100%;
+      width: 100%;
+      padding: 28px 56px;
+    }
   }
 }
 
@@ -72,6 +86,7 @@
 @media screen and (max-width: 768px) {
   .container {
     display: block;
+    background: $color-bg;
   }
   .bgImage {
     display: none;
@@ -120,13 +135,17 @@
     grid-row: 1;
     grid-column: 1 / 4;
   }
-  .main {
+  .mainWrapper {
     grid-row: 1;
     grid-column: 2;
+    height: 100%;
+    width: 100%;
+  }
+  .main {
     width: 100%;
     height: 100%;
 
-    & > main {
+    .article {
       margin-top: 10%;
       width: 100%;
       height: 56%;
