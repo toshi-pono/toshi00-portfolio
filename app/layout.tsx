@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import Footer from 'components/Footer'
 import Header from 'components/Header'
 
 import rukachi from 'assets/rukachi.svg'
@@ -25,7 +26,9 @@ export default function RootLayout({
             height={1080}
             className={styles.bgImage}
           />
-          <Header className={styles.header} />
+          <div className={styles.header}>
+            <Header />
+          </div>
           <div className={styles.main}>
             <main>{children}</main>
             <Image
@@ -35,6 +38,9 @@ export default function RootLayout({
               height={662}
               className={styles.rukachi}
             />
+          </div>
+          <div className={styles.footer}>
+            <Footer />
           </div>
         </div>
       </body>
