@@ -1,0 +1,47 @@
+@import 'styles/variables';
+
+.link {
+  text-decoration: none;
+  color: $color-text;
+}
+
+.container {
+  display: grid;
+  aspect-ratio: 3 / 2;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .info {
+    grid-row: -1 / 1;
+    grid-column: 1;
+    align-self: flex-end;
+    background-color: $color-primary;
+    padding: 6px 16px;
+
+    h2 {
+      font-size: 1rem;
+      margin: 0;
+      margin-bottom: 4px;
+      text-align: center;
+    }
+    .taglist {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      margin: 0px;
+      color: $color-text-secondary;
+    }
+  }
+}
