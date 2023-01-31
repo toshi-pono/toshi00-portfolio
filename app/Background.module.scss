@@ -73,13 +73,13 @@
       aspect-ratio: 16 / 9;
       background-color: $color-bg;
       overflow-x: hidden;
+    }
 
-      /* safari(15.6.1) で aspect-ratio の計算にpaddingが含まれなかったので、paddingを内部でとる */
-      & > div {
-        height: 100%;
-        width: 100%;
-        padding: 28px 56px;
-      }
+    /* safari(15.6.1) で aspect-ratio の計算にpaddingが含まれなかったので、paddingを内部でとる */
+    .pageContainer {
+      padding: 28px 50px;
+      width: 100%;
+      height: 100%;
     }
   }
 }
@@ -139,7 +139,7 @@
       height: auto;
       aspect-ratio: auto;
 
-      & > main {
+      .article {
         width: 100%;
         height: auto;
         aspect-ratio: auto;

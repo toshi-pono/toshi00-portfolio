@@ -35,7 +35,7 @@ const Background = ({ page, header, footer }: Props) => {
       <div className={styles.mainWrapper}>
         <div className={styles.main}>
           <main className={styles.article}>
-            <div>{page}</div>
+            <div className={styles.pageContainer}>{page}</div>
           </main>
           <Image
             src={rukachi}

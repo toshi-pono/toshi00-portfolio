@@ -2,8 +2,12 @@
   font-weight: 500;
 }
 
-.container {
+.cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 12px;
+}
+
+.container {
+  padding-bottom: 28px;
 }

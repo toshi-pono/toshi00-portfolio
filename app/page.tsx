@@ -15,7 +15,7 @@ export default function Home() {
         <p className={styles.description}>
           メタモンと一緒に
           <br />
-          雰囲気でものづくりしています
+          ものづくりをしています
         </p>
       </div>
       <div className={styles.article}>
