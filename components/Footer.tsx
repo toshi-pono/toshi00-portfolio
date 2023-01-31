@@ -5,7 +5,13 @@ const Footer = () => {
     <footer className={styles.footer}>
       <p>
         design/created by{' '}
-        <a href="https://github.com/toshi-pono/toshi00-portfolio">toshi00</a>
+        <a
+          href="https://github.com/toshi-pono/toshi00-portfolio"
+          target="_blank"
+          rel="noreferrer"
+        >
+          toshi00
+        </a>
       </p>
     </footer>
   )

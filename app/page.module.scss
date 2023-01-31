@@ -1,3 +1,5 @@
+@import 'styles/variables';
+
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -47,6 +49,28 @@
 
     & :nth-child(2) {
       align-self: flex-start;
+    }
+
+    .links {
+      margin: 16px 8px;
+      .link {
+        display: flex;
+        align-items: center;
+        color: $color-link;
+        line-height: 24px;
+        margin-bottom: 4px;
+
+        &:visited {
+          color: $color-link-visited;
+        }
+
+        .icon {
+          width: 24px;
+          height: 24px;
+          color: $color-text;
+          margin-right: 4px;
+        }
+      }
     }
   }
 }

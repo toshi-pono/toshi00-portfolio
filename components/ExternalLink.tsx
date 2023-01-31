@@ -9,7 +9,7 @@ interface Props {
 
 const ExternalLink = ({ text, href }: Props) => {
   return (
-    <a href={href} className={styles.link}>
+    <a href={href} className={styles.link} target="_blank" rel="noreferrer">
       {text}
       <HiExternalLink />
     </a>

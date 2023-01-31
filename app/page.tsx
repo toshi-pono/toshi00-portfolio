@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { IoLogoGithub, IoLogoTwitter } from 'react-icons/io5'
 
 import Headline from 'components/Headline'
 
@@ -46,6 +47,26 @@ export default function Home() {
           </div>
           <div>
             <Headline title="リンク" />
+            <div className={styles.links}>
+              <a
+                href="https://github.com/toshi-pono"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.link}
+              >
+                <IoLogoGithub className={styles.icon} />
+                Github
+              </a>
+              <a
+                href="https://twitter.com/toshi00_p"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.link}
+              >
+                <IoLogoTwitter className={styles.icon} />
+                Twitter
+              </a>
+            </div>
           </div>
         </div>
       </div>
