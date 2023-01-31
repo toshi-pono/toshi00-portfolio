@@ -20,6 +20,7 @@ const Card = ({ work }: { work: Work }) => {
         />
         <div className={styles.info}>
           <h2>{work.title}</h2>
+          <p className={styles.subTitle}>{work.subtitle}</p>
           <div className={styles.taglist}>
             {work.tags.map((tag) => (
               // TODO: tagで検索できるようにする

@@ -23,25 +23,32 @@
     grid-row: -1 / 1;
     grid-column: 1;
     align-self: flex-end;
-    background-color: $color-primary;
-    padding: 6px 16px;
+    backdrop-filter: blur(4px);
+    background-color: #ffffff44;
+    padding: 6px 8px;
 
     h2 {
       font-size: 1rem;
+      font-weight: 500;
       margin: 0;
       margin-bottom: 4px;
+      text-align: center;
+    }
+    .subTitle {
+      margin: 0px;
+      font-size: 0.75rem;
       text-align: center;
     }
     .taglist {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 0.5rem;
     }
 
     .tag {
       font-size: 0.75rem;
       margin: 0px;
-      color: $color-text-secondary;
     }
   }
 }
