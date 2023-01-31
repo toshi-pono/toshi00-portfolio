@@ -23,8 +23,8 @@
     grid-row: -1 / 1;
     grid-column: 1;
     align-self: flex-end;
-    backdrop-filter: blur(4px);
-    background-color: #ffffff44;
+    /* NOTE: safari で backdrop-filter に角丸が効かなかった */
+    background-color: #ffffffcc;
     padding: 6px 8px;
 
     h2 {
