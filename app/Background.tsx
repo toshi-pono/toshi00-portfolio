@@ -1,6 +1,8 @@
 'use client'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
+
+import FullScreenButton from 'components/FullScreenButton'
 
 import rukachi from 'assets/rukachi.svg'
 import backgroundTV from 'assets/tv.svg'
@@ -15,6 +17,9 @@ interface Props {
 
 const Background = ({ page, header, footer }: Props) => {
   const [isZooming, setIsZooming] = useState(false)
+  const onChange = useCallback(() => {
+    setIsZooming((prev) => !prev)
+  }, [])
   return (
     <div className={isZooming ? styles.zoomContainer : styles.container}>
       <Image
@@ -45,7 +50,7 @@ const Background = ({ page, header, footer }: Props) => {
       </div>
       <div className={styles.footer}>{footer}</div>
       <div className={styles.toggle}>
-        <button onClick={() => setIsZooming(!isZooming)}>toggle</button>
+        <FullScreenButton isFull={isZooming} onClick={onChange} />
       </div>
     </div>
   )

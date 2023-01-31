@@ -1,0 +1,26 @@
+.button {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+  pointer-events: all;
+  align-items: center;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+.label {
+  margin: 0;
+  font-size: 0.9rem;
+}
