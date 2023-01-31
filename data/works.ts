@@ -1,7 +1,7 @@
 export interface Work {
   id: string
   title: string
-  subtitle: string
+  subtitle: string // max 12 文字
   description: string
   links: {
     name: string
@@ -15,7 +15,7 @@ export const works: Work[] = [
   {
     id: 'fooder',
     title: 'Fooder',
-    subtitle: 'レストラン即断即決サービス',
+    subtitle: 'レストラン即決サービス',
     description:
       '部内ハッカソン（2022年春）で制作したレストラン即断即決サービスです。フロントエンドとバックエンドを担当しました。',
     links: [
