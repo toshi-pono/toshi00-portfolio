@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import { useState } from 'react'
 
 import rukachi from 'assets/rukachi.svg'
 import backgroundTV from 'assets/tv.svg'
@@ -13,8 +14,9 @@ interface Props {
 }
 
 const Background = ({ page, header, footer }: Props) => {
+  const [isZooming, setIsZooming] = useState(false)
   return (
-    <div className={styles.container}>
+    <div className={isZooming ? styles.zoomContainer : styles.container}>
       <Image
         src={backgroundTV}
         alt=""
@@ -42,6 +44,9 @@ const Background = ({ page, header, footer }: Props) => {
         </div>
       </div>
       <div className={styles.footer}>{footer}</div>
+      <div className={styles.toggle}>
+        <button onClick={() => setIsZooming(!isZooming)}>toggle</button>
+      </div>
     </div>
   )
 }
