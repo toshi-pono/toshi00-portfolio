@@ -5,17 +5,17 @@
   height: 100%;
   background: linear-gradient(
     180deg,
-    #eef4fc 0%,
-    #eef4fc calc($max-bg-height * 0.7),
-    #cad1db calc($max-bg-height * 0.7),
-    #cad1db 100%
+    $color-bg-base 0%,
+    $color-bg-base calc($max-bg-height * 0.7),
+    $color-bg-bottom calc($max-bg-height * 0.7),
+    $color-bg-bottom 100%
   );
 }
 
 .zoomBgColor {
   height: 100%;
   width: 100%;
-  background-color: #eef4fc;
+  background-color: $color-bg-base;
 }
 
 .container {
@@ -29,10 +29,10 @@
   grid-template-rows: 10% 56% 1fr;
   background: linear-gradient(
     180deg,
-    #eef4fc 0%,
-    #eef4fc 70%,
-    #cad1db 70%,
-    #cad1db 100%
+    $color-bg-base 0%,
+    $color-bg-base 70%,
+    $color-bg-bottom 70%,
+    $color-bg-bottom 100%
   );
 
   .header {
@@ -91,7 +91,7 @@
       height: 100%;
       width: auto;
       aspect-ratio: 16 / 9;
-      background-color: $color-bg;
+      background-color: $color-bg-white;
       overflow-x: hidden;
     }
 
@@ -151,7 +151,7 @@
 @media screen and (max-width: $smartphone-width) {
   .container {
     display: block;
-    background: #eef4fc;
+    background: $color-bg-base;
 
     .bgImage {
       display: none;
@@ -181,7 +181,7 @@
   .zoomBgColor {
     height: 100%;
     width: 100%;
-    background: #eef4fc;
+    background: $color-bg-base;
   }
 }
 
