@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import Image from 'next/image'
 
 import Footer from 'components/Footer'
@@ -16,7 +17,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="jp">
-      <head />
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <div className={styles.container}>
           <Image
@@ -26,6 +38,7 @@ export default function RootLayout({
             height={1080}
             className={styles.bgImage}
             draggable={false}
+            priority
           />
           <div className={styles.header}>
             <Header />
@@ -42,6 +55,7 @@ export default function RootLayout({
                 height={662}
                 className={styles.rukachi}
                 draggable={false}
+                priority
               />
             </div>
           </div>

@@ -1,4 +1,3 @@
-import { Noto_Sans_JP } from '@next/font/google'
 import Image from 'next/image'
 
 import Headline from 'components/Headline'
@@ -7,14 +6,9 @@ import icon from 'assets/icon.svg'
 
 import styles from './page.module.scss'
 
-const notoSansJP = Noto_Sans_JP({
-  subsets: ['japanese'],
-  weight: ['400', '500'],
-})
-
 export default function Home() {
   return (
-    <div className={`${styles.container} ${notoSansJP.className}`}>
+    <div className={styles.container}>
       <div className={styles.info}>
         <Image src={icon} alt="" width={250} height={250} />
         <h1 className={styles.name}>とし / toshi00</h1>

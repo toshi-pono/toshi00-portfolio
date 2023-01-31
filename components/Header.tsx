@@ -1,21 +1,15 @@
 'use client'
 
-import { Noto_Sans_JP } from '@next/font/google'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import styles from './Header.module.scss'
 
-const notoSansJP = Noto_Sans_JP({
-  subsets: ['japanese'],
-  weight: ['400', '500'],
-})
-
 const Header = () => {
   const pathname = usePathname()
 
   return (
-    <header className={`${styles.header} ${notoSansJP.className}`}>
+    <header className={`${styles.header}`}>
       <Link className={styles.title} href="/">
         toshi00.dev
       </Link>

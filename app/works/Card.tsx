@@ -1,4 +1,3 @@
-import { Noto_Sans_JP } from '@next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -6,19 +5,11 @@ import { Work } from 'data/works'
 
 import styles from './Card.module.scss'
 
-const notoSansJP = Noto_Sans_JP({
-  subsets: ['japanese', 'latin'],
-  weight: ['400'],
-})
-
 const Card = ({ work }: { work: Work }) => {
   const img =
     work.images.length > 0 ? `/works/${work.images[0]}` : 'works/fallback.svg'
   return (
-    <Link
-      href={`/works/${work.id}`}
-      className={`${styles.link} ${notoSansJP.className}`}
-    >
+    <Link href={`/works/${work.id}`} className={styles.link}>
       <section className={styles.container}>
         <Image
           src={img}
@@ -28,7 +19,7 @@ const Card = ({ work }: { work: Work }) => {
           height={250}
         />
         <div className={styles.info}>
-          <h2 className={notoSansJP.className}>{work.title}</h2>
+          <h2>{work.title}</h2>
           <div className={styles.taglist}>
             {work.tags.map((tag) => (
               // TODO: tagで検索できるようにする
