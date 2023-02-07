@@ -80,6 +80,20 @@
     pointer-events: none;
     -webkit-user-drag: none;
   }
+  .game {
+    position: absolute;
+    height: 25%;
+    width: auto;
+    top: 95%;
+    right: 14%;
+  }
+  .robot {
+    position: absolute;
+    height: 25%;
+    width: auto;
+    top: 95%;
+    right: -2%;
+  }
 
   /* firefox で grid直下の要素に対する横幅の調整が効かなかったのでwrapして指定 */
   .mainWrapper {
@@ -127,7 +141,9 @@
     display: none;
   }
   .rukachi,
-  .seat {
+  .seat,
+  .game,
+  .robot {
     display: none;
   }
   .footer {
@@ -177,7 +193,9 @@
       display: none;
     }
     .rukachi,
-    .seat {
+    .seat,
+    .game,
+    .robot {
       display: none;
     }
     .mainWrapper {
@@ -240,8 +258,8 @@
 @media screen and (min-aspect-ratio: 16/9) and (min-width: $smartphone-width) {
   .bgColor {
     width: 100%;
-    height: 100%;
-    min-height: $max-bg-height;
+    height: auto;
+    min-height: 100%;
   }
 
   .container {
@@ -269,6 +287,18 @@
       height: 10%;
       top: 88%;
       left: -23%;
+    }
+    .game {
+      position: absolute;
+      height: 14%;
+      top: 63%;
+      right: 14%;
+    }
+    .robot {
+      position: absolute;
+      height: 12%;
+      top: 65%;
+      right: -3%;
     }
     .header {
       grid-row: 1;

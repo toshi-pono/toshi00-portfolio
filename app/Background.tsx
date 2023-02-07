@@ -5,6 +5,8 @@ import { useCallback, useState } from 'react'
 
 import FullScreenButton from 'components/FullScreenButton'
 
+import game from 'assets/game.svg'
+import robot from 'assets/robot.svg'
 import rukachi from 'assets/rukachi.svg'
 import seat from 'assets/seat.svg'
 import backgroundTV from 'assets/tv.svg'
@@ -59,6 +61,24 @@ const Background = ({ page, header, footer }: Props) => {
               width={581}
               height={662}
               className={styles.rukachi}
+              draggable={false}
+              priority
+            />
+            <Image
+              src={game}
+              alt=""
+              width={308}
+              height={155}
+              className={styles.game}
+              draggable={false}
+              priority
+            />
+            <Image
+              src={robot}
+              alt=""
+              width={146}
+              height={120}
+              className={styles.robot}
               draggable={false}
               priority
             />
