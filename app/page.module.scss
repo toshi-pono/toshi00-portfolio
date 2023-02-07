@@ -5,6 +5,7 @@
   grid-template-columns: 1fr 2fr;
   column-gap: 24px;
   justify-content: center;
+  align-items: center;
   height: 100%;
 
   @media screen and (max-width: $smartphone-width) {
@@ -78,27 +79,15 @@
 
   .article {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: max-content max-content;
+    grid-template-columns: 1fr 1fr;
     gap: 16px;
-    align-items: flex-end;
-    height: 100%;
+    align-items: flex-start;
 
     @media screen and (max-width: $smartphone-width) {
-      display: block;
-    }
-
-    & > div {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-
-      @media screen and (max-width: $smartphone-width) {
-        display: block;
-      }
-    }
-
-    & :nth-child(2) {
-      align-self: flex-start;
+      grid-template-rows: auto;
+      grid-template-columns: auto;
+      gap: 24px;
     }
 
     .links {
@@ -122,5 +111,12 @@
         }
       }
     }
+  }
+}
+
+.phoneOnly {
+  display: none;
+  @media screen and (max-width: $smartphone-width) {
+    display: block;
   }
 }
