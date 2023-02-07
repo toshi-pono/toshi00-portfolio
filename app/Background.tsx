@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import { useCallback, useState } from 'react'
 
 import FullScreenButton from 'components/FullScreenButton'
@@ -16,10 +17,12 @@ interface Props {
 }
 
 const Background = ({ page, header, footer }: Props) => {
+  const pathname = usePathname()
   const [isZooming, setIsZooming] = useState(false)
   const onChange = useCallback(() => {
     setIsZooming((prev) => !prev)
   }, [])
+  const isAbout = pathname === '/'
   return (
     <div className={isZooming ? styles.zoomBgColor : styles.bgColor}>
       <div className={isZooming ? styles.zoomContainer : styles.container}>
@@ -35,7 +38,9 @@ const Background = ({ page, header, footer }: Props) => {
         <div className={styles.header}>{header}</div>
         <div className={styles.mainWrapper}>
           <div className={styles.main}>
-            <main className={styles.article}>
+            <main
+              className={`${styles.article} ${isAbout ? styles.topBar : ''}`}
+            >
               <div className={styles.pageContainer}>{page}</div>
             </main>
             <Image
