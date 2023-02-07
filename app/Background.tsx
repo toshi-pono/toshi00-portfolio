@@ -84,7 +84,6 @@ const Background = ({ page, header, footer }: Props) => {
             />
           </div>
         </div>
-        <div className={styles.footer}>{footer}</div>
         <div className={styles.toggle}>
           <FullScreenButton isFull={isZooming} onClick={onChange} />
         </div>
