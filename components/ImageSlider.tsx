@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { toImagePath, WorkImage } from 'data/works'
 
 import styles from './ImageSlider.module.scss'
+import '@splidejs/react-splide/css'
 
 interface Props {
   images: WorkImage[]
