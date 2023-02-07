@@ -16,7 +16,7 @@ export default function Home() {
         <Image src={icon} alt="" width={250} height={250} />
         <h1 className={styles.name}>とし / toshi00</h1>
         <p className={styles.description}>
-          メタモンと一緒に
+          Webフロントエンド
           <br />
           ものづくりをしています
         </p>
@@ -25,7 +25,7 @@ export default function Home() {
         <div className={styles.phoneInfo}>
           <Image src={icon} alt="" width={100} height={100} />
           <div className={styles.name}>
-            <p>メタモン & ものづくり</p>
+            <p>フロントエンド & ものづくり</p>
             <h1>toshi00</h1>
           </div>
         </div>
