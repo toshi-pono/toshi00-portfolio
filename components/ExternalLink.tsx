@@ -3,14 +3,14 @@ import { HiExternalLink } from 'react-icons/hi'
 import styles from './ExternalLink.module.scss'
 
 interface Props {
-  text: string
+  children: React.ReactNode
   href: string
 }
 
-const ExternalLink = ({ text, href }: Props) => {
+const ExternalLink = ({ children, href }: Props) => {
   return (
     <a href={href} className={styles.link} target="_blank" rel="noreferrer">
-      {text}
+      {children}
       <HiExternalLink />
     </a>
   )

@@ -38,7 +38,7 @@ const Work = ({ params }: { params?: any; children?: React.ReactNode }) => {
         <ul className={styles.linkList}>
           {work.links.map((link) => (
             <li key={link.url}>
-              <ExternalLink text={link.name} href={link.url} />
+              <ExternalLink href={link.url}>{link.name}</ExternalLink>
             </li>
           ))}
         </ul>
