@@ -6,6 +6,7 @@ import { useCallback, useState } from 'react'
 import FullScreenButton from 'components/FullScreenButton'
 
 import rukachi from 'assets/rukachi.svg'
+import seat from 'assets/seat.svg'
 import backgroundTV from 'assets/tv.svg'
 
 import styles from './Background.module.scss'
@@ -43,6 +44,15 @@ const Background = ({ page, header, footer }: Props) => {
             >
               <div className={styles.pageContainer}>{page}</div>
             </main>
+            <Image
+              src={seat}
+              alt=""
+              width={393}
+              height={97}
+              className={styles.seat}
+              draggable={false}
+              priority
+            />
             <Image
               src={rukachi}
               alt=""

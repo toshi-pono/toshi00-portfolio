@@ -70,6 +70,16 @@
     pointer-events: none;
     -webkit-user-drag: none;
   }
+  .seat {
+    position: absolute;
+    height: 18%;
+    width: auto;
+    top: 141%;
+    left: -5%;
+    user-select: none;
+    pointer-events: none;
+    -webkit-user-drag: none;
+  }
 
   /* firefox で grid直下の要素に対する横幅の調整が効かなかったのでwrapして指定 */
   .mainWrapper {
@@ -116,7 +126,8 @@
   .bgImage {
     display: none;
   }
-  .rukachi {
+  .rukachi,
+  .seat {
     display: none;
   }
   .footer {
@@ -165,7 +176,8 @@
     .bgImage {
       display: none;
     }
-    .rukachi {
+    .rukachi,
+    .seat {
       display: none;
     }
     .mainWrapper {
@@ -251,6 +263,12 @@
       height: 61%;
       top: 35%;
       left: -40%;
+    }
+    .seat {
+      position: absolute;
+      height: 10%;
+      top: 88%;
+      left: -23%;
     }
     .header {
       grid-row: 1;
