@@ -25,7 +25,7 @@ export default function Home() {
         <div className={styles.phoneInfo}>
           <Image src={icon} alt="" width={100} height={100} />
           <div className={styles.name}>
-            <p>ふわふわものづくり</p>
+            <p>メタモン & ものづくり</p>
             <h1>toshi00</h1>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function Home() {
           <Headline title="実績とか" />
           <ul>
             <li>WebSpeedHackathon for Student(2022)：2位</li>
-            <li>DeNAインターン2022 優勝</li>
+            <li>DeNAインターン2022：優勝</li>
           </ul>
           <Link href="/logs" className={styles.seeMore}>
             もっと見る
