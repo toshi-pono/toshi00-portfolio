@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import { IoChevronBackCircleOutline } from 'react-icons/io5'
+import { MdUpdate } from 'react-icons/md'
 
 import ExternalLink from 'components/ExternalLink'
 import ImageSlider from 'components/ImageSlider'
@@ -22,16 +24,15 @@ const Work = ({ params }: { params?: any; children?: React.ReactNode }) => {
   }
 
   return (
-    <div className={`${styles.container}`}>
-      <div className={`${styles.title}`}>
-        <h1>{work.title}</h1>
-        <div className={styles.taglist}>
-          {work.tags.map((tag) => (
-            <p key={tag} className={styles.tag}>
-              #{tag}
-            </p>
-          ))}
-        </div>
+    <div className={styles.container}>
+      <div className={styles.title}>
+        <h1>
+          {work.title}｜{work.subtitle}
+        </h1>
+        <p className={styles.date}>
+          <MdUpdate className={styles.icon} />
+          {work.date}
+        </p>
       </div>
       <section className={styles.article}>
         <p>{work.description}</p>
@@ -46,9 +47,19 @@ const Work = ({ params }: { params?: any; children?: React.ReactNode }) => {
       <section className={styles.images}>
         <ImageSlider images={work.images} />
       </section>
-      <Link href="/works" className={styles.back}>
-        戻る
-      </Link>
+      <nav className={styles.navigation}>
+        <Link href="/works" className={styles.back}>
+          <IoChevronBackCircleOutline className={styles.icon} />
+          戻る
+        </Link>
+        <div className={styles.taglist}>
+          {work.tags.map((tag) => (
+            <p key={tag} className={styles.tag}>
+              #{tag}
+            </p>
+          ))}
+        </div>
+      </nav>
     </div>
   )
 }

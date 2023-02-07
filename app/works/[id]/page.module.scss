@@ -3,10 +3,10 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 6rem 1fr 1rem;
+  grid-template-rows: 5em 1fr 1rem;
   column-gap: 16px;
   height: 100%;
-  padding-bottom: 32px;
+  padding-bottom: 24px;
   color: $color-text;
 }
 
@@ -15,18 +15,20 @@
   grid-row: 1;
   h1 {
     font-weight: 500;
-    margin-bottom: 0px;
+    margin: 0px;
+    margin-top: 4px;
   }
-
-  .taglist {
+  .date {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    padding: 4px;
-
-    .tag {
-      margin: 0px;
-      color: $color-bg-bottom;
+    align-items: center;
+    margin: 0px;
+    color: $color-bg-bottom;
+    .icon {
+      display: block;
+      margin-right: 4px;
+      margin-top: 2px;
+      width: 20px;
+      height: 20px;
     }
   }
 }
@@ -34,27 +36,49 @@
 .article {
   p {
     margin: 0px;
+    white-space: pre-wrap;
   }
 
   h2 {
     margin: 0px;
-    margin-top: 12px;
   }
 
   .linkList {
-    margin: 4px;
-  }
-
-  ul {
     padding-inline-start: 0px;
     list-style: none;
+    margin: 8px 0px;
   }
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .back {
-  grid-column: 1;
-  grid-row: -1 / -2;
-  align-self: flex-end;
   text-decoration: none;
   color: $color-text;
+  text-align: center;
+  font-size: 0.7rem;
+  .icon {
+    display: block;
+    margin-right: 4px;
+    margin-top: 2px;
+    width: 32px;
+    height: 32px;
+    margin-bottom: -2px;
+  }
+}
+
+.taglist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 4px;
+
+  .tag {
+    margin: 0px;
+    color: $color-text;
+  }
 }
