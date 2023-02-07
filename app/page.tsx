@@ -19,6 +19,15 @@ export default function Home() {
           ものづくりをしています
         </p>
       </div>
+      <div className={styles.phoneInfoContainer}>
+        <div className={styles.phoneInfo}>
+          <Image src={icon} alt="" width={100} height={100} />
+          <div className={styles.name}>
+            <p>ふわふわものづくり</p>
+            <h1>toshi00</h1>
+          </div>
+        </div>
+      </div>
       <div className={styles.article}>
         <div>
           <div>

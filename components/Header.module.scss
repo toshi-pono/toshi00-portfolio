@@ -5,8 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4px 16px;
-  padding-bottom: 16px;
+  padding: 16px;
   color: $color-text;
   max-width: $max-content-width;
   width: 100%;
@@ -39,6 +38,10 @@
 
     .active {
       border-bottom: 2px solid $color-text;
+    }
+
+    @media screen and (max-width: 600px) {
+      display: none;
     }
   }
 }

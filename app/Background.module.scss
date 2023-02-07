@@ -150,8 +150,17 @@
 // スマホレイアウト
 @media screen and (max-width: $smartphone-width) {
   .container {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 56px 1fr 56px;
     background: $color-bg-base;
+    background-color: $color-bg-base;
+    height: 100%;
+    max-height: none;
+
+    .header {
+      background-color: $color-bg-bottom;
+    }
 
     .bgImage {
       display: none;
@@ -159,9 +168,12 @@
     .rukachi {
       display: none;
     }
+    .mainWrapper {
+      height: 100%;
+    }
     .main {
       width: 100%;
-      height: auto;
+      height: 100%;
       aspect-ratio: auto;
 
       .article {
@@ -169,6 +181,10 @@
         background-color: transparent;
         height: auto;
         aspect-ratio: auto;
+
+        .pageContainer {
+          padding: 16px;
+        }
       }
     }
   }

@@ -7,6 +7,10 @@
   justify-content: center;
   height: 100%;
 
+  @media screen and (max-width: $smartphone-width) {
+    display: block;
+  }
+
   .info {
     display: flex;
     flex-direction: column;
@@ -32,6 +36,44 @@
       text-align: center;
       margin: 0px;
     }
+
+    @media screen and (max-width: $smartphone-width) {
+      display: none;
+    }
+  }
+
+  .phoneInfoContainer {
+    display: none;
+    @media screen and (max-width: $smartphone-width) {
+      display: flex;
+      justify-content: center;
+      margin: 0px;
+      margin-bottom: 36px;
+
+      .phoneInfo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          border: 4px solid white;
+        }
+
+        .name {
+          p {
+            margin: 0px;
+            font-size: 14px;
+          }
+
+          h1 {
+            margin: 0px;
+            font-size: 28px;
+          }
+        }
+      }
+    }
   }
 
   .article {
@@ -41,10 +83,18 @@
     align-items: flex-end;
     height: 100%;
 
+    @media screen and (max-width: $smartphone-width) {
+      display: block;
+    }
+
     & > div {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
+
+      @media screen and (max-width: $smartphone-width) {
+        display: block;
+      }
     }
 
     & :nth-child(2) {
