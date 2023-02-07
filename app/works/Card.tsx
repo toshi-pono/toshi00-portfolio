@@ -1,13 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { Work } from 'data/works'
+import { toImagePath, Work } from 'data/works'
 
 import styles from './Card.module.scss'
 
 const Card = ({ work }: { work: Work }) => {
   const img =
-    work.images.length > 0 ? `/works/${work.images[0]}` : 'works/fallback.svg'
+    work.images.length > 0
+      ? toImagePath(work.images[0].path)
+      : '/works/fallback.svg'
   return (
     <Link href={`/works/${work.id}`} className={styles.link}>
       <section className={styles.container}>

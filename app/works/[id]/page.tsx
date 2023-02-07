@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
 import ExternalLink from 'components/ExternalLink'
+import ImageSlider from 'components/ImageSlider'
 
 import { works, getWork } from 'data/works'
 
@@ -34,7 +35,6 @@ const Work = ({ params }: { params?: any; children?: React.ReactNode }) => {
       </div>
       <section className={styles.article}>
         <p>{work.description}</p>
-        <h2>リンク</h2>
         <ul className={styles.linkList}>
           {work.links.map((link) => (
             <li key={link.url}>
@@ -42,6 +42,9 @@ const Work = ({ params }: { params?: any; children?: React.ReactNode }) => {
             </li>
           ))}
         </ul>
+      </section>
+      <section className={styles.images}>
+        <ImageSlider images={work.images} />
       </section>
       <Link href="/works" className={styles.back}>
         戻る
