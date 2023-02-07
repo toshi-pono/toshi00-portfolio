@@ -1,3 +1,8 @@
+export interface WorkImage {
+  path: string
+  alt: string
+}
+
 export interface Work {
   id: string
   title: string
@@ -7,7 +12,7 @@ export interface Work {
     name: string
     url: string
   }[]
-  images: string[]
+  images: WorkImage[]
   tags: string[]
 }
 
@@ -32,11 +37,18 @@ export const works: Work[] = [
         url: 'https://trap.jp/post/1603/',
       },
     ],
-    images: ['fooder.webp'],
+    images: [
+      { path: 'fooder.webp', alt: 'image' },
+      { path: 'fooder_flow.png', alt: 'fooder利用の流れ' },
+    ],
     tags: ['Golang', 'Vue'],
   },
 ]
 
 export const getWork = (id: string) => {
   return works.find((work) => work.id === id)
+}
+
+export const toImagePath = (file: string) => {
+  return `/works/${file}`
 }
