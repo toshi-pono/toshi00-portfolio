@@ -165,6 +165,42 @@ export const works: Work[] = [
     images: [{ path: 'root3.png', alt: 'Root3コンセプト画像' }],
     tags: ['React', 'ハッカソン'],
   },
+  {
+    id: 'linQ',
+    title: 'linQ',
+    subtitle: 'ブックマーク共有サービス',
+    date: '2021/10',
+    description:
+      'traP春ハッカソンにて制作しました。ブックマークの共有・閲覧ができるサービスです\n\nバックエンドの実装を担当しました。',
+    links: [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/hackathon21spring-05/linq-backend',
+      },
+      {
+        name: '2021春ハッカソン 5班「linQ」製作記',
+        url: 'https://trap.jp/post/1321/',
+      },
+    ],
+    images: [{ path: 'linq.png', alt: 'linQサービス画像' }],
+    tags: ['Go', 'ハッカソン'],
+  },
+  {
+    id: 'portfolio',
+    title: 'ポートフォリオ',
+    subtitle: '本サイト',
+    date: '2023/02',
+    description:
+      'ポートフォリオです。Next13のAppDirectoryを使用しています。SSGでcloudflare pagesにデプロイしています。',
+    links: [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/toshi-pono/toshi00-portfolio',
+      },
+    ],
+    images: [{ path: 'portfolio.png', alt: 'ポートフォリオコンセプト画像' }],
+    tags: ['React'],
+  },
 ]
 
 export const getWork = (id: string) => {
