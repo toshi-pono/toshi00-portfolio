@@ -15,6 +15,7 @@ export interface Work {
   }[]
   images: WorkImage[]
   tags: string[]
+  techs: string[]
 }
 
 export const works: Work[] = [
@@ -43,7 +44,8 @@ export const works: Work[] = [
       { path: 'fooder.webp', alt: 'fooderのロゴ' },
       { path: 'fooder_flow.png', alt: 'fooder利用の流れ' },
     ],
-    tags: ['Go', 'Vue', 'ハッカソン'],
+    techs: ['Go', 'Vue'],
+    tags: ['ハッカソン', 'Web'],
   },
   {
     id: 'TypoIME',
@@ -63,7 +65,8 @@ export const works: Work[] = [
       },
     ],
     images: [{ path: 'typoime.png', alt: 'IME自作のすすめ' }],
-    tags: ['Rust'],
+    techs: ['Rust'],
+    tags: ['個人開発'],
   },
   {
     id: 'poketch',
@@ -83,7 +86,8 @@ export const works: Work[] = [
       },
     ],
     images: [{ path: 'poketch.png', alt: 'ポケッチの外観' }],
-    tags: ['Arduino'],
+    techs: ['Arduino'],
+    tags: ['個人開発'],
   },
   {
     id: 'Nascalay',
@@ -121,7 +125,8 @@ export const works: Work[] = [
         alt: '結果',
       },
     ],
-    tags: ['React', 'ハッカソン'],
+    techs: ['React'],
+    tags: ['ハッカソン', 'Web'],
   },
   {
     id: 'typoime-vscode',
@@ -143,7 +148,8 @@ export const works: Work[] = [
     images: [
       { path: 'typoime-vscode.png', alt: 'TypoIME-VSCodeのストアの写真' },
     ],
-    tags: ['Arduino'],
+    techs: ['VSCode', 'TypeScript'],
+    tags: ['個人開発'],
   },
   {
     id: 'root-san',
@@ -163,7 +169,8 @@ export const works: Work[] = [
       },
     ],
     images: [{ path: 'root3.png', alt: 'Root3コンセプト画像' }],
-    tags: ['React', 'ハッカソン'],
+    techs: ['React'],
+    tags: ['ハッカソン', 'Web'],
   },
   {
     id: 'linQ',
@@ -183,7 +190,8 @@ export const works: Work[] = [
       },
     ],
     images: [{ path: 'linq.png', alt: 'linQサービス画像' }],
-    tags: ['Go', 'ハッカソン'],
+    techs: ['Go'],
+    tags: ['ハッカソン', 'Web'],
   },
   {
     id: 'portfolio',
@@ -199,14 +207,39 @@ export const works: Work[] = [
       },
     ],
     images: [{ path: 'portfolio.png', alt: 'ポートフォリオコンセプト画像' }],
-    tags: ['React'],
+    techs: ['Next.js'],
+    tags: ['個人開発', 'Web'],
   },
 ]
 
-export const getWork = (id: string) => {
+export const getWork = (id: string): Work | undefined => {
   return works.find((work) => work.id === id)
+}
+
+export const getNextWorkId = (id: string): string => {
+  const index = works.findIndex((work) => work.id === id)
+  if (index === -1) {
+    return works[works.length - 1].id
+  }
+  return works[(index + 1) % works.length].id
+}
+
+export const getPrevWorkId = (id: string): string => {
+  const index = works.findIndex((work) => work.id === id)
+  if (index === -1) {
+    return works[0].id
+  }
+  return works[(index - 1 + works.length) % works.length].id
 }
 
 export const toImagePath = (file: string) => {
   return `/works/${file}`
 }
+
+export const filterWorks = (tags: string[]) => {
+  return works.filter((work) => {
+    return tags.some((tag) => work.tags.includes(tag))
+  })
+}
+
+export const tags = Array.from(new Set(works.map((work) => work.tags).flat()))

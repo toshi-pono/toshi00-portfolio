@@ -1,12 +1,16 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { IoChevronBackCircleOutline } from 'react-icons/io5'
-import { MdUpdate } from 'react-icons/md'
+import {
+  MdApps,
+  MdArrowBackIosNew,
+  MdArrowForwardIos,
+  MdUpdate,
+} from 'react-icons/md'
 
 import ExternalLink from 'components/ExternalLink'
 import ImageSlider from 'components/ImageSlider'
 
-import { works, getWork } from 'data/works'
+import { works, getWork, getNextWorkId, getPrevWorkId } from 'data/works'
 
 import styles from './page.module.scss'
 
@@ -29,10 +33,19 @@ const Work = ({ params }: { params?: any; children?: React.ReactNode }) => {
         <h1>
           {work.title}｜{work.subtitle}
         </h1>
-        <p className={styles.date}>
-          <MdUpdate className={styles.icon} />
-          {work.date}
-        </p>
+        <div className={styles.support}>
+          <p className={styles.date}>
+            <MdUpdate className={styles.icon} />
+            {work.date}
+          </p>
+          <div className={styles.taglist}>
+            {work.tags.map((tag) => (
+              <Link key={tag} className={styles.tag} href={`/works?tag=${tag}`}>
+                #{tag}
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
       <section className={styles.article}>
         <p>{work.description}</p>
@@ -48,17 +61,15 @@ const Work = ({ params }: { params?: any; children?: React.ReactNode }) => {
         <ImageSlider images={work.images} />
       </section>
       <nav className={styles.navigation}>
-        <Link href="/works" className={styles.back}>
-          <IoChevronBackCircleOutline className={styles.icon} />
-          戻る
+        <Link href={`/works/${getPrevWorkId(work.id)}`} className={styles.link}>
+          <MdArrowBackIosNew className={styles.icon} />
         </Link>
-        <div className={styles.taglist}>
-          {work.tags.map((tag) => (
-            <p key={tag} className={styles.tag}>
-              #{tag}
-            </p>
-          ))}
-        </div>
+        <Link href="/works" className={styles.link}>
+          <MdApps className={styles.icon} />
+        </Link>
+        <Link href={`/works/${getNextWorkId(work.id)}`} className={styles.link}>
+          <MdArrowForwardIos className={styles.icon} />
+        </Link>
       </nav>
     </div>
   )
