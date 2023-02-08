@@ -4,15 +4,13 @@ import Link from 'next/link'
 import ExternalLink from 'components/ExternalLink'
 import Headline from 'components/Headline'
 
-import icon from 'assets/icon.svg'
-
 import styles from './page.module.scss'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.info}>
-        <Image src={icon} alt="" width={250} height={250} />
+        <Image src="/bg/icon.svg" alt="" width={250} height={250} />
         <h1 className={styles.name}>とし / toshi00</h1>
         <p className={styles.description}>
           Webフロントエンド
@@ -22,7 +20,7 @@ export default function Home() {
       </div>
       <div className={styles.phoneInfoContainer}>
         <div className={styles.phoneInfo}>
-          <Image src={icon} alt="" width={100} height={100} />
+          <Image src="/bg/icon.svg" alt="" width={100} height={100} />
           <div className={styles.name}>
             <p>フロントエンド & ものづくり</p>
             <h1>toshi00</h1>

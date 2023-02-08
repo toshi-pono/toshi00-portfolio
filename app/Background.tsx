@@ -1,15 +1,10 @@
 'use client'
+
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useCallback, useState } from 'react'
 
 import FullScreenButton from 'components/FullScreenButton'
-
-import game from 'assets/game.svg'
-import robot from 'assets/robot.svg'
-import rukachi from 'assets/rukachi.svg'
-import seat from 'assets/seat.svg'
-import backgroundTV from 'assets/tv.svg'
 
 import styles from './Background.module.scss'
 
@@ -30,7 +25,7 @@ const Background = ({ page, header, footer }: Props) => {
     <div className={isZooming ? styles.zoomBgColor : styles.bgColor}>
       <div className={isZooming ? styles.zoomContainer : styles.container}>
         <Image
-          src={backgroundTV}
+          src="/bg/tv.svg"
           alt=""
           width={1920}
           height={1080}
@@ -47,7 +42,7 @@ const Background = ({ page, header, footer }: Props) => {
               <div className={styles.pageContainer}>{page}</div>
             </main>
             <Image
-              src={seat}
+              src="/bg/seat.svg"
               alt=""
               width={393}
               height={97}
@@ -56,7 +51,7 @@ const Background = ({ page, header, footer }: Props) => {
               priority
             />
             <Image
-              src={rukachi}
+              src="/bg/rukachi.svg"
               alt=""
               width={581}
               height={662}
@@ -65,7 +60,7 @@ const Background = ({ page, header, footer }: Props) => {
               priority
             />
             <Image
-              src={game}
+              src="/bg/game.svg"
               alt=""
               width={308}
               height={155}
@@ -74,7 +69,7 @@ const Background = ({ page, header, footer }: Props) => {
               priority
             />
             <Image
-              src={robot}
+              src="/bg/robot.svg"
               alt=""
               width={146}
               height={120}
