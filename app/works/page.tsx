@@ -41,7 +41,9 @@ const Works = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Works｜制作物</h1>
+      <h1 className={styles.title}>
+        Works<span className={styles.subtitle}>｜制作物</span>
+      </h1>
       <TagList tags={tags} selectedTags={selectedTags} onClick={handleChange} />
       <div className={styles.cards}>
         {works.map((work) => (

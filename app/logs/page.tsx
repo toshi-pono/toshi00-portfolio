@@ -18,7 +18,9 @@ const Logs = () => {
   }
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Logs｜インターンとか</h1>
+      <h1 className={styles.title}>
+        Logs<span className={styles.subtitle}>｜インターンとか</span>
+      </h1>
       <div className={styles.tags}>
         {tags.map((tag) => (
           <button
