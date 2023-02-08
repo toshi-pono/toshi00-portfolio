@@ -210,3 +210,11 @@ export const getWork = (id: string) => {
 export const toImagePath = (file: string) => {
   return `/works/${file}`
 }
+
+export const filterWorks = (tags: string[]) => {
+  return works.filter((work) => {
+    return tags.some((tag) => work.tags.includes(tag))
+  })
+}
+
+export const tags = Array.from(new Set(works.map((work) => work.tags).flat()))
