@@ -35,7 +35,7 @@ export const works: Work[] = [
         url: 'https://github.com/22hack12spring',
       },
       {
-        name: '2022 春ハッカソン 12班 「Fooder」（ブログ）',
+        name: '2022 春ハッカソン 12班 「Fooder」製作記',
         url: 'https://trap.jp/post/1603/',
       },
     ],
@@ -98,7 +98,11 @@ export const works: Work[] = [
         url: 'https://nascalay.trap.games/',
       },
       {
-        name: '2021 冬ハッカソン 2班「Nascalay」（ブログ）',
+        name: 'GitHub',
+        url: 'https://github.com/21hack02win/nascalay-frontend',
+      },
+      {
+        name: '2021 冬ハッカソン 2班「Nascalay」',
         url: 'https://trap.jp/post/1467/',
       },
     ],
@@ -118,6 +122,28 @@ export const works: Work[] = [
       },
     ],
     tags: ['React', 'ハッカソン'],
+  },
+  {
+    id: 'typoime-vscode',
+    title: 'TypoIME-VSCode',
+    subtitle: 'こっそりtypoするVSCode拡張',
+    date: '2022/09',
+    description:
+      'TypoIMEのVSCode拡張バージョン。入力した文字を勝手に似た文字に変えてしまう最悪の拡張機能です！勝手に文字が変換される環境でプログラミングができますか？\nVSCodeの拡張機能として公開しています。',
+    links: [
+      {
+        name: 'TypoIME-VSCode(Visual Studio Marketplace)',
+        url: 'https://marketplace.visualstudio.com/items?itemName=toshi00.typoime-vscode',
+      },
+      {
+        name: '最悪な拡張機能 TypoIME-VSCode を作ろう',
+        url: 'https://trap.jp/post/1692/',
+      },
+    ],
+    images: [
+      { path: 'typoime-vscode.png', alt: 'TypoIME-VSCodeのストアの写真' },
+    ],
+    tags: ['Arduino'],
   },
 ]
 
