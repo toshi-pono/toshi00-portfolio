@@ -42,3 +42,11 @@ export const logs: Log[] = [
   }
   return b.year - a.year
 })
+
+export const tags = Array.from(new Set(logs.map((log) => log.tags).flat()))
+
+export const filterLogs = (tags: string[]) => {
+  return logs.filter((log) => {
+    return log.tags.some((tag) => tags.includes(tag))
+  })
+}
