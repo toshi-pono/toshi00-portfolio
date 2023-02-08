@@ -1,0 +1,36 @@
+@import 'styles/variables';
+
+.container {
+  display: flex;
+  gap: 16px;
+}
+
+.date {
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  color: $color-text-secondary;
+
+  p {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 4px;
+  }
+}
+
+.content {
+  width: 100%;
+  color: $color-text;
+  .title {
+    margin: 0px;
+  }
+  .description {
+    margin: 0px;
+    margin-top: 4px;
+    font-size: 0.9rem;
+  }
+  .links {
+    list-style: none;
+    padding: 0px;
+    font-size: 0.9rem;
+  }
+}
