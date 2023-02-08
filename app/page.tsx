@@ -76,8 +76,17 @@ export default function Home() {
         <div className={styles.phoneOnly}>
           <Headline title="制作物とか" />
           <ul>
-            <li>電子工作</li>
-            <li>メタモン</li>
+            <li>
+              <Link href="/works/fooder">ごはん屋さん即決アプリ Fooder</Link>
+            </li>
+            <li>
+              <Link href="/works/typoime">
+                エンジニアは絶対に使えないRust製IME TypoIME
+              </Link>
+            </li>
+            <li>
+              <Link href="/works/root-san">グループ割り勘計算アプリ ROOT3</Link>
+            </li>
           </ul>
           <Link href="/works" className={styles.seeMore}>
             もっと見る

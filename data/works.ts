@@ -48,7 +48,7 @@ export const works: Work[] = [
     tags: ['ハッカソン', 'Web'],
   },
   {
-    id: 'TypoIME',
+    id: 'typoime',
     title: 'TypoIME',
     subtitle: 'こっそり変換するIME',
     date: '2022/03',
@@ -90,7 +90,7 @@ export const works: Work[] = [
     tags: ['個人開発'],
   },
   {
-    id: 'Nascalay',
+    id: 'nascalay',
     title: 'Nascalay',
     subtitle: '協力お絵かきリレーゲーム',
     date: '2021/12',
@@ -153,14 +153,14 @@ export const works: Work[] = [
   },
   {
     id: 'root-san',
-    title: 'root3',
+    title: 'ROOT3',
     subtitle: 'グループ割り勘計算アプリ',
     date: '2022/12',
     description:
       'traP冬ハッカソンにて制作しました。記録と自動計算で、旅行のような長期での割り勘計算を素早く助けるアプリケーションです。\n\n画面遷移アニメーションなど、フロントエンドの実装を担当しました。',
     links: [
       {
-        name: 'Root3',
+        name: 'ROOT3',
         url: 'https://root3.trap.games/',
       },
       {
@@ -173,7 +173,7 @@ export const works: Work[] = [
     tags: ['ハッカソン', 'Web'],
   },
   {
-    id: 'linQ',
+    id: 'linq',
     title: 'linQ',
     subtitle: 'ブックマーク共有サービス',
     date: '2021/10',
