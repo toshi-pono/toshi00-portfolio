@@ -212,8 +212,24 @@ export const works: Work[] = [
   },
 ]
 
-export const getWork = (id: string) => {
+export const getWork = (id: string): Work | undefined => {
   return works.find((work) => work.id === id)
+}
+
+export const getNextWorkId = (id: string): string => {
+  const index = works.findIndex((work) => work.id === id)
+  if (index === -1) {
+    return works[works.length - 1].id
+  }
+  return works[(index + 1) % works.length].id
+}
+
+export const getPrevWorkId = (id: string): string => {
+  const index = works.findIndex((work) => work.id === id)
+  if (index === -1) {
+    return works[0].id
+  }
+  return works[(index - 1 + works.length) % works.length].id
 }
 
 export const toImagePath = (file: string) => {
