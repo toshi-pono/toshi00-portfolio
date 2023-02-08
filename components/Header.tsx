@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import styles from './Header.module.scss'
+import Menu from './Menu'
 
 const Header = () => {
   const pathname = usePathname()
@@ -30,6 +31,9 @@ const Header = () => {
           logs
         </Link>
       </nav>
+      <div className={styles.menu}>
+        <Menu />
+      </div>
     </header>
   )
 }
