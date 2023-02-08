@@ -10,13 +10,18 @@ import { filterWorks, tags } from 'data/works'
 import Card from './Card'
 import styles from './page.module.scss'
 
+const parseTags = (tagQuery: string | null) => {
+  if (tagQuery === null) return tags
+  return tagQuery === '' ? [] : tagQuery.split(',')
+}
+
 const Works = () => {
-  // HACK?: useSearchParamsだけを使ったパターンだと動作がもっさりしてたので、useStateで管理してる
+  // HACK?: useSearchParamsの更新が遅い？のでuseStateで管理
   const selectedTagQuery = useSearchParams().get('tag')
   const router = useRouter()
 
   const [selectedTags, setSelectedTags] = useState<string[]>(
-    selectedTagQuery?.split(',') ?? tags
+    parseTags(selectedTagQuery)
   )
   const works = filterWorks(selectedTags)
   const handleChange = (tag: string) => {
@@ -30,7 +35,8 @@ const Works = () => {
     router.push(`/works?tag=${newTags.join(',')}`)
   }
   useEffect(() => {
-    setSelectedTags(selectedTagQuery?.split(',') ?? tags)
+    // TODO?: 再レンダリング走るけどいい感じの解決策ないかな
+    setSelectedTags(parseTags(selectedTagQuery))
   }, [selectedTagQuery])
 
   return (
