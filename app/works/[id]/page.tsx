@@ -31,7 +31,8 @@ const Work = ({ params }: { params?: any; children?: React.ReactNode }) => {
     <div className={styles.container}>
       <div className={styles.title}>
         <h1>
-          {work.title}｜{work.subtitle}
+          {work.title}
+          <span className={styles.subtitle}>｜{work.subtitle}</span>
         </h1>
         <div className={styles.support}>
           <p className={styles.date}>
