@@ -1,0 +1,39 @@
+@import 'styles/variables';
+.container {
+  padding-bottom: 36px;
+}
+
+.logs {
+  display: grid;
+  gap: 32px;
+  list-style: none;
+  padding: 0px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 36px;
+}
+
+.tag {
+  background-color: transparent;
+  border: 2px solid $color-bg-bottom;
+  color: $color-bg-bottom;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: $color-bg-bottom;
+  color: $color-text;
+}
