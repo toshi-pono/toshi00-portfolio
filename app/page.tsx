@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { IoLogoGithub, IoLogoTwitter } from 'react-icons/io5'
 
 import ExternalLink from 'components/ExternalLink'
 import Headline from 'components/Headline'
