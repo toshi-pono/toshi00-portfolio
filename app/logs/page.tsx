@@ -2,13 +2,13 @@
 
 import { useState } from 'react'
 
-import { filterLogs, tags } from 'data/logs'
+import { filterLogs, tags, defaultTags } from 'data/logs'
 
 import LogCard from './LogCard'
 import styles from './page.module.scss'
 
 const Logs = () => {
-  const [selectedTags, setSelectedTags] = useState<string[]>(tags)
+  const [selectedTags, setSelectedTags] = useState<string[]>(defaultTags)
   const changeTag = (tag: string) => {
     if (selectedTags.includes(tag)) {
       setSelectedTags(selectedTags.filter((t) => t !== tag))
@@ -18,7 +18,7 @@ const Logs = () => {
   }
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Logs</h1>
+      <h1 className={styles.title}>Logs｜インターンとか</h1>
       <div className={styles.tags}>
         {tags.map((tag) => (
           <button

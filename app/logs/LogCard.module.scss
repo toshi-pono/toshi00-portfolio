@@ -1,7 +1,8 @@
 @import 'styles/variables';
 
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 80px 1fr;
   gap: 16px;
 }
 
@@ -22,6 +23,7 @@
   color: $color-text;
   .title {
     margin: 0px;
+    font-size: 22px;
   }
   .description {
     margin: 0px;
