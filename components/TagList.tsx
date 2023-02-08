@@ -1,27 +1,26 @@
 import Link from 'next/link'
 
-import { toggleTagQuery, isSelected } from 'libs/tag'
-
 import styles from './TagList.module.scss'
 
 interface Props {
   tags: string[]
   selectedTags: string[]
+  onClick: (tag: string) => void
 }
 
-const TagList = ({ tags, selectedTags }: Props) => {
+const TagList = ({ tags, selectedTags, onClick }: Props) => {
   return (
     <div className={styles.container}>
       {tags.map((tag) => (
-        <Link
+        <button
           key={tag}
-          href={`/works?tag=${toggleTagQuery(tag, selectedTags)}`}
           className={`${styles.tag} ${
-            isSelected(tag, selectedTags) && styles.selected
+            selectedTags.includes(tag) && styles.selected
           }`}
+          onClick={() => onClick(tag)}
         >
           {tag}
-        </Link>
+        </button>
       ))}
     </div>
   )
