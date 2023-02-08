@@ -3,7 +3,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 5em 1fr 1rem;
+  grid-template-rows: 5rem 1fr 3rem;
   column-gap: 16px;
   height: 100%;
   padding-bottom: 24px;
@@ -78,7 +78,13 @@
   padding: 4px;
 
   .tag {
-    margin: 0px;
-    color: $color-text;
+    background-color: transparent;
+    border: 2px solid $color-bg-bottom;
+    color: $color-bg-bottom;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 2px 4px;
+    font-size: 0.8rem;
   }
 }

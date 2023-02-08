@@ -54,9 +54,9 @@ const Work = ({ params }: { params?: any; children?: React.ReactNode }) => {
         </Link>
         <div className={styles.taglist}>
           {work.tags.map((tag) => (
-            <p key={tag} className={styles.tag}>
-              #{tag}
-            </p>
+            <Link key={tag} className={styles.tag} href={`/works?tag=${tag}`}>
+              {tag}
+            </Link>
           ))}
         </div>
       </nav>
