@@ -102,7 +102,21 @@ export const works: Work[] = [
         url: 'https://trap.jp/post/1467/',
       },
     ],
-    images: [{ path: 'nascalay.webp', alt: 'nascalayで遊んでいる様子' }],
+    images: [
+      { path: 'nascalay.webp', alt: 'nascalayで遊んでいる様子' },
+      {
+        path: 'nascalay_howtoplay.png',
+        alt: 'キャンバスを分割して、最後にまとめる',
+      },
+      {
+        path: 'nascalay_canvas.png',
+        alt: '画面中央のキャンバスに絵を書いて送信する',
+      },
+      {
+        path: 'nascalay_example.png',
+        alt: '結果',
+      },
+    ],
     tags: ['React', 'ハッカソン'],
   },
 ]
