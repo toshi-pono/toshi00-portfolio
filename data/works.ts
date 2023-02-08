@@ -145,6 +145,26 @@ export const works: Work[] = [
     ],
     tags: ['Arduino'],
   },
+  {
+    id: 'root-san',
+    title: 'root3',
+    subtitle: 'グループ割り勘計算アプリ',
+    date: '2022/12',
+    description:
+      'traP冬ハッカソンにて制作しました。記録と自動計算で、旅行のような長期での割り勘計算を素早く助けるアプリケーションです。\n\n画面遷移アニメーションなど、フロントエンドの実装を担当しました。',
+    links: [
+      {
+        name: 'Root3',
+        url: 'https://root3.trap.games/',
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/root-san/root-san-UI',
+      },
+    ],
+    images: [{ path: 'root3.png', alt: 'Root3コンセプト画像' }],
+    tags: ['React', 'ハッカソン'],
+  },
 ]
 
 export const getWork = (id: string) => {
