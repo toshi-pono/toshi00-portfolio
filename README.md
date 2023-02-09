@@ -1,5 +1,7 @@
 # toshi00-portfolio
 
+![CI](https://github.com/toshi-pono/toshi00-portfolio/workflows/CI/badge.svg)
+
 ![portfolio](https://github.com/toshi-pono/toshi00-portfolio/blob/main/public/works/portfolio.png)
 
 ## Overview
