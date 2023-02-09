@@ -40,6 +40,10 @@ export const logs: Log[] = [
         name: 'セキュリティ・キャンプ全国大会2021詳細',
         url: 'https://www.ipa.go.jp/jinzai/camp/2021/zenkoku2021_index.html',
       },
+      {
+        name: 'JTAGアダプター製作記（Speaker Deck）',
+        url: 'https://speakerdeck.com/toshi00/jtagadapterzhi-zuo-ji-seccamp2021-x-2',
+      },
     ],
   },
   {
@@ -75,7 +79,7 @@ export const logs: Log[] = [
 })
 
 export const tags = Array.from(new Set(logs.map((log) => log.tags).flat()))
-export const defaultTags = ['インターン', '受賞']
+export const defaultTags = ['インターン', '受賞', 'イベント']
 
 export const filterLogs = (tags: string[]) => {
   return logs.filter((log) => {
