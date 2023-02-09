@@ -66,7 +66,11 @@ export const works: Work[] = [
         url: 'https://trap.jp/post/1691/',
       },
     ],
-    images: [{ path: 'typoime.png', alt: 'IME自作のすすめ' }],
+    images: [
+      { path: 'typoime.png', alt: 'IME自作のすすめ' },
+      { path: 'typoime_desc.webp', alt: '0とOなど似た文字に変換する' },
+      { path: 'typoime_demo.gif', alt: '文字入力している様子' },
+    ],
     techs: ['Rust'],
     tags: ['個人開発'],
     color: '#d7f1a5',
@@ -88,7 +92,14 @@ export const works: Work[] = [
         url: 'https://trap.jp/post/1266/',
       },
     ],
-    images: [{ path: 'poketch.png', alt: 'ポケッチの外観' }],
+    images: [
+      { path: 'poketch.png', alt: 'ポケッチの外観' },
+      { path: 'poketch_note.png', alt: 'ノート機能の実例' },
+      {
+        path: 'poketch_band.png',
+        alt: '3Dプリンタを使って腕時計バンドを取り付けた',
+      },
+    ],
     techs: ['Arduino'],
     tags: ['個人開発'],
     color: '#d6d4c7',
@@ -174,7 +185,18 @@ export const works: Work[] = [
         url: 'https://github.com/root-san/root-san-UI',
       },
     ],
-    images: [{ path: 'root3.png', alt: 'Root3コンセプト画像' }],
+    images: [
+      { path: 'root3.png', alt: 'ROOT3コンセプト画像' },
+      {
+        path: 'root3_explain.png',
+        alt: 'ROOT3は割り勘計算を簡単に記録計算できるサービスです',
+      },
+      {
+        path: 'root3_view1.png',
+        alt: 'グループを作成し、招待QRコードを読み込んで、出費を記録します。あとは好きなときに精算するだけ！',
+      },
+      { path: 'root3_view2.png', alt: 'PWAにも対応しています' },
+    ],
     techs: ['React'],
     tags: ['ハッカソン', 'Web'],
     color: '#428C95',
