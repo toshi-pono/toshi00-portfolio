@@ -70,6 +70,9 @@
 }
 
 .images {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
   @media screen and (max-width: $smartphone-width) {
     grid-row: 2;
     justify-self: center;

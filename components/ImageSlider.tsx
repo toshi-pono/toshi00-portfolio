@@ -13,7 +13,7 @@ interface Props {
 
 const ImageSlider = ({ images }: Props) => {
   return (
-    <Splide aria-label="Image Slider">
+    <Splide aria-label="Image Slider" className={styles.wrap}>
       {images.map((image) => (
         <SplideSlide key={image.path}>
           <Image
