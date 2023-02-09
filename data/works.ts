@@ -43,7 +43,9 @@ export const works: Work[] = [
     ],
     images: [
       { path: 'fooder.webp', alt: 'fooderのロゴ' },
+      { path: 'fooder_question.png', alt: 'fooderの質問画面' },
       { path: 'fooder_flow.png', alt: 'fooder利用の流れ' },
+      { path: 'fooder_tech.png', alt: 'fooderの技術スタック' },
     ],
     techs: ['Go', 'Vue'],
     tags: ['ハッカソン', 'Web'],
