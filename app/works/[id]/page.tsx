@@ -59,7 +59,7 @@ const Work = ({ params }: { params?: any; children?: React.ReactNode }) => {
         </ul>
       </section>
       <section className={styles.images}>
-        <ImageSlider images={work.images} />
+        <ImageSlider images={work.images} color={work.color} />
       </section>
       <nav className={styles.navigation}>
         <Link href={`/works/${getPrevWorkId(work.id)}`} className={styles.link}>

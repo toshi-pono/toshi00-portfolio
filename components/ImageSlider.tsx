@@ -9,23 +9,26 @@ import '@splidejs/react-splide/css'
 
 interface Props {
   images: WorkImage[]
+  color?: string
 }
 
-const ImageSlider = ({ images }: Props) => {
+const ImageSlider = ({ color, images }: Props) => {
   return (
-    <Splide aria-label="Image Slider" className={styles.wrap}>
-      {images.map((image) => (
-        <SplideSlide key={image.path}>
-          <Image
-            src={toImagePath(image.path)}
-            alt={image.alt}
-            width={1024}
-            height={768}
-            className={styles.slideImage}
-          />
-        </SplideSlide>
-      ))}
-    </Splide>
+    <div style={{ backgroundColor: color ?? '#cad1db' }}>
+      <Splide aria-label="Image Slider" className={styles.wrap}>
+        {images.map((image) => (
+          <SplideSlide key={image.path}>
+            <Image
+              src={toImagePath(image.path)}
+              alt={image.alt}
+              width={700}
+              height={393}
+              className={styles.slideImage}
+            />
+          </SplideSlide>
+        ))}
+      </Splide>
+    </div>
   )
 }
 
