@@ -19,6 +19,7 @@ const Card = ({ work }: { work: Work }) => {
           className={styles.image}
           width={300}
           height={200}
+          style={{ backgroundColor: work.color ?? '#cad1db' }}
         />
         <div className={styles.info}>
           <h2>{work.title}</h2>

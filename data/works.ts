@@ -16,6 +16,7 @@ export interface Work {
   images: WorkImage[]
   tags: string[]
   techs: string[]
+  color?: string
 }
 
 export const works: Work[] = [
@@ -46,6 +47,7 @@ export const works: Work[] = [
     ],
     techs: ['Go', 'Vue'],
     tags: ['ハッカソン', 'Web'],
+    color: '#ff914c',
   },
   {
     id: 'typoime',
@@ -67,6 +69,7 @@ export const works: Work[] = [
     images: [{ path: 'typoime.png', alt: 'IME自作のすすめ' }],
     techs: ['Rust'],
     tags: ['個人開発'],
+    color: '#d7f1a5',
   },
   {
     id: 'poketch',
@@ -88,6 +91,7 @@ export const works: Work[] = [
     images: [{ path: 'poketch.png', alt: 'ポケッチの外観' }],
     techs: ['Arduino'],
     tags: ['個人開発'],
+    color: '#d6d4c7',
   },
   {
     id: 'nascalay',
@@ -127,6 +131,7 @@ export const works: Work[] = [
     ],
     techs: ['React'],
     tags: ['ハッカソン', 'Web'],
+    color: '#96A0C0',
   },
   {
     id: 'typoime-vscode',
@@ -150,6 +155,7 @@ export const works: Work[] = [
     ],
     techs: ['VSCode', 'TypeScript'],
     tags: ['個人開発'],
+    color: '#EFF1F3',
   },
   {
     id: 'root-san',
@@ -171,6 +177,7 @@ export const works: Work[] = [
     images: [{ path: 'root3.png', alt: 'Root3コンセプト画像' }],
     techs: ['React'],
     tags: ['ハッカソン', 'Web'],
+    color: '#428C95',
   },
   {
     id: 'linq',
@@ -192,6 +199,7 @@ export const works: Work[] = [
     images: [{ path: 'linq.png', alt: 'linQサービス画像' }],
     techs: ['Go'],
     tags: ['ハッカソン', 'Web'],
+    color: '#E5F6EF',
   },
   {
     id: 'portfolio',
@@ -209,6 +217,7 @@ export const works: Work[] = [
     images: [{ path: 'portfolio.png', alt: 'ポートフォリオコンセプト画像' }],
     techs: ['Next.js'],
     tags: ['個人開発', 'Web'],
+    color: '#ECF2FB',
   },
 ]
 
