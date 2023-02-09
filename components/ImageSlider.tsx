@@ -16,7 +16,7 @@ const ImageSlider = ({ color, images }: Props) => {
   return (
     <div style={{ backgroundColor: color ?? '#cad1db' }}>
       <Splide aria-label="Image Slider" className={styles.wrap}>
-        {images.map((image) => (
+        {images.map((image, i) => (
           <SplideSlide key={image.path}>
             <Image
               src={toImagePath(image.path)}
@@ -24,6 +24,7 @@ const ImageSlider = ({ color, images }: Props) => {
               width={700}
               height={393}
               className={styles.slideImage}
+              priority={i === 0}
             />
           </SplideSlide>
         ))}
