@@ -1,0 +1,74 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  packages:
+    name: check yarn install
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: .node-version
+          cache: yarn
+      - name: check yarn install
+        run: yarn install --frozen-lockfile
+  lint:
+    name: run lint
+    runs-on: ubuntu-latest
+    needs: [packages]
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: .node-version
+          cache: yarn
+      - name: yarn install
+        run: yarn install --frozen-lockfile
+      - name: run lint
+        run: yarn lint
+  type-check:
+    name: run typecheck
+    runs-on: ubuntu-latest
+    needs: [packages]
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: .node-version
+          cache: yarn
+      - name: yarn install
+        run: yarn install --frozen-lockfile
+      - name: run typecheck
+        run: yarn typecheck
+  format:
+    name: run format
+    runs-on: ubuntu-latest
+    needs: [packages]
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: .node-version
+          cache: yarn
+      - name: yarn install
+        run: yarn install --frozen-lockfile
+      - name: run format
+        run: yarn prettier:check
