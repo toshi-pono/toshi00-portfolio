@@ -18,7 +18,7 @@ const Card = ({ work }: { work: Work }) => {
           alt=""
           className={styles.image}
           width={300}
-          height={250}
+          height={200}
         />
         <div className={styles.info}>
           <h2>{work.title}</h2>
