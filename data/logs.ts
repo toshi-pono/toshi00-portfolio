@@ -56,6 +56,21 @@ export const logs: Log[] = [
     tags: ['イベント', '受賞'],
   },
   {
+    id: 'klabexpertcamp',
+    year: 2022,
+    month: 3,
+    title: 'KLabExpertCamp 2022',
+    description:
+      'TCP/IPプロトコルスタックをCで実装する5日間のイベントに参加し、ARPやUDPについて学びました',
+    tags: ['イベント'],
+    links: [
+      {
+        name: 'microps',
+        url: 'https://github.com/toshi-pono/microps',
+      },
+    ],
+  },
+  {
     id: 'pixiv',
     year: 2022,
     month: 2,
