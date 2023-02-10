@@ -26,7 +26,7 @@ export const works: Work[] = [
     subtitle: 'レストラン即決サービス',
     date: '2022/06',
     description:
-      'traP内ハッカソンで制作したレストラン即断即決サービスです。3タップで近くのお店からおすすめを選んでくれます。\n\nフロントエンド・バックエンド・デザインを担当しました。',
+      'traP内ハッカソンで制作したレストラン即断即決サービスです。3タップで近くのお店からおすすめを選んでくれます。優秀賞 & チームラボ賞を受賞。\n\nフロントエンド・バックエンド・デザインを担当しました。',
     links: [
       {
         name: 'Fooder',
@@ -112,7 +112,7 @@ export const works: Work[] = [
     subtitle: '協力お絵かきリレーゲーム',
     date: '2021/12',
     description:
-      'traP冬ハッカソンにて制作したお絵かきリレーゲームです。複数人で協力して大きな絵を完成させます。 \n\nフロントエンドの実装を担当しました。',
+      'traP冬ハッカソンにて制作したお絵かきリレーゲームです。複数人で協力して大きな絵を完成させます。テーマ賞。 \n\nフロントエンドの実装を担当しました。',
     links: [
       {
         name: 'お絵かきリレーNascalay',
@@ -145,30 +145,6 @@ export const works: Work[] = [
     techs: ['React'],
     tags: ['ハッカソン', 'Web'],
     color: '#96A0C0',
-  },
-  {
-    id: 'typoime-vscode',
-    title: 'TypoIME-VSCode',
-    subtitle: 'こっそりtypoするVSCode拡張',
-    date: '2022/09',
-    description:
-      'TypoIMEのVSCode拡張バージョン。入力した文字を勝手に似た文字に変えてしまう最悪の拡張機能です！勝手に文字が変換される環境でプログラミングができますか？\nVSCodeの拡張機能として公開しています。',
-    links: [
-      {
-        name: 'TypoIME-VSCode(Visual Studio Marketplace)',
-        url: 'https://marketplace.visualstudio.com/items?itemName=toshi00.typoime-vscode',
-      },
-      {
-        name: '最悪な拡張機能 TypoIME-VSCode を作ろう',
-        url: 'https://trap.jp/post/1692/',
-      },
-    ],
-    images: [
-      { path: 'typoime-vscode.png', alt: 'TypoIME-VSCodeのストアの写真' },
-    ],
-    techs: ['VSCode', 'TypeScript'],
-    tags: ['個人開発'],
-    color: '#EFF1F3',
   },
   {
     id: 'root-san',
@@ -204,12 +180,63 @@ export const works: Work[] = [
     color: '#428C95',
   },
   {
+    id: 'jtag',
+    title: 'JTAG Adapter',
+    subtitle: '自作デバッグ用基板',
+    date: '2021/12',
+    description:
+      'FT232HLを利用したJTAG/I2C/UARTデバッグ器具です。GroveコネクタでI2C通信も可能です。KiCadを用いて基板設計を行い実装しました。\n\nセキュリティ・キャンプ2021 X-2トラックにて制作した基板の改良版です',
+    links: [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/toshi-pono/jtagAdapter',
+      },
+    ],
+    images: [
+      {
+        path: 'jtag.png',
+        alt: 'JTAG Adapterの写真',
+      },
+      {
+        path: 'jtag_kicad.png',
+        alt: 'JTAG Adapterの3D図',
+      },
+    ],
+    techs: ['KiCad', '電子工作'],
+    tags: ['個人開発'],
+    color: '#459D87',
+  },
+  {
+    id: 'typoime-vscode',
+    title: 'TypoIME-VSCode',
+    subtitle: 'こっそりtypoするVSCode拡張',
+    date: '2022/09',
+    description:
+      'TypoIMEのVSCode拡張バージョン。入力した文字を勝手に似た文字に変えてしまう最悪の拡張機能です！勝手に文字が変換される環境でプログラミングができますか？\nVSCodeの拡張機能として公開しています。',
+    links: [
+      {
+        name: 'TypoIME-VSCode(Visual Studio Marketplace)',
+        url: 'https://marketplace.visualstudio.com/items?itemName=toshi00.typoime-vscode',
+      },
+      {
+        name: '最悪な拡張機能 TypoIME-VSCode を作ろう',
+        url: 'https://trap.jp/post/1692/',
+      },
+    ],
+    images: [
+      { path: 'typoime-vscode.png', alt: 'TypoIME-VSCodeのストアの写真' },
+    ],
+    techs: ['VSCode', 'TypeScript'],
+    tags: ['個人開発'],
+    color: '#EFF1F3',
+  },
+  {
     id: 'linq',
     title: 'linQ',
     subtitle: 'ブックマーク共有サービス',
     date: '2021/10',
     description:
-      'traP春ハッカソンにて制作しました。ブックマークの共有・閲覧ができるサービスです\n\nバックエンドの実装を担当しました。',
+      'traP春ハッカソンにて制作しました。ブックマークの共有・閲覧ができるサービスです。技術賞。\n\nバックエンドの実装を担当しました。',
     links: [
       {
         name: 'GitHub',
@@ -231,7 +258,7 @@ export const works: Work[] = [
     subtitle: '本サイト',
     date: '2023/02',
     description:
-      'ポートフォリオです。Next13のAppDirectoryを使用しています。SSGでcloudflare pagesにデプロイしています。',
+      'ポートフォリオです。Next13のAppDirectoryを使用しています。Vercelにデプロイしています。',
     links: [
       {
         name: 'GitHub',
