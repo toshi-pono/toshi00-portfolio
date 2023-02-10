@@ -10,6 +10,9 @@
   flex-shrink: 0;
   font-size: 0.9rem;
   color: $color-text-secondary;
+  @media screen and (max-width: $smartphone-width) {
+    color: $color-text-secondary-mobile;
+  }
 
   p {
     padding: 0px;

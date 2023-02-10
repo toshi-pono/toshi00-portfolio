@@ -41,7 +41,11 @@
     display: flex;
     align-items: center;
     margin: 0px;
-    color: $color-bg-bottom;
+    color: $color-text-secondary;
+    @media screen and (max-width: $smartphone-width) {
+      color: $color-text-secondary-mobile;
+    }
+
     .icon {
       display: block;
       margin-right: 4px;
@@ -132,7 +136,11 @@
 
   .tag {
     background-color: transparent;
-    color: $color-bg-bottom;
+    color: $color-text-secondary;
+    @media screen and (max-width: $smartphone-width) {
+      color: $color-text-secondary-mobile;
+    }
+
     text-decoration: none;
     border-radius: 4px;
     cursor: pointer;
