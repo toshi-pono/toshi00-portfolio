@@ -13,7 +13,7 @@ export default function Home() {
         <Image src="/bg/icon.svg" alt="" width={250} height={250} priority />
         <h1 className={styles.name}>とし / toshi00</h1>
         <p className={styles.description}>
-          Webフロントエンド
+          フロントエンドなど
           <br />
           ものづくりをしています
         </p>
