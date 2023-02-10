@@ -15,7 +15,11 @@ interface Props {
 const ImageSlider = ({ color, images }: Props) => {
   return (
     <div style={{ backgroundColor: color ?? '#cad1db' }}>
-      <Splide aria-label="Image Slider" className={styles.wrap}>
+      <Splide
+        aria-label="制作物の参考画像"
+        className={styles.wrap}
+        tag="section"
+      >
         {images.map((image, i) => (
           <SplideSlide key={image.path}>
             <Image
