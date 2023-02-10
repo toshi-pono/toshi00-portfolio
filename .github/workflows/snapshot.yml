@@ -1,0 +1,30 @@
+name: takeSnapshot
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version-file: .node-version
+        cache: yarn
+    - name: Install dependencies
+      run: yarn install --frozen-lockfile
+    - name: Install Playwright Browsers
+      run: yarn playwright install --with-deps
+    - name: Run Playwright tests
+      run: yarn test:e2e:shot
+    - uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: upload snapshot
+        path: test-results/
+        retention-days: 10
