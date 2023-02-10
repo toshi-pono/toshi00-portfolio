@@ -9,6 +9,9 @@
     "lint": "next lint",
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
+    "test:e2e": "playwright test --grep @default",
+    "test:e2e:all": "playwright test",
+    "test:e2e:shot": "playwright test --grep @shot",
     "test": "yarn prettier:check && yarn lint"
   },
   "dependencies": {
@@ -27,6 +30,8 @@
     "typescript": "4.9.4"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.6.0",
+    "@playwright/test": "^1.30.0",
     "eslint-config-prettier": "^8.6.0",
     "prettier": "^2.8.2",
     "sass": "^1.57.1"
