@@ -62,13 +62,25 @@ const Work = ({ params }: { params?: any; children?: React.ReactNode }) => {
         <ImageSlider images={work.images} color={work.color} />
       </section>
       <nav className={styles.navigation}>
-        <Link href={`/works/${getPrevWorkId(work.id)}`} className={styles.link}>
+        <Link
+          href={`/works/${getPrevWorkId(work.id)}`}
+          className={styles.link}
+          aria-label="一つ前の制作物を見る"
+        >
           <MdArrowBackIosNew className={styles.icon} />
         </Link>
-        <Link href="/works" className={styles.link}>
+        <Link
+          href="/works"
+          className={styles.link}
+          aria-label="制作物一覧に戻る"
+        >
           <MdApps className={styles.icon} />
         </Link>
-        <Link href={`/works/${getNextWorkId(work.id)}`} className={styles.link}>
+        <Link
+          href={`/works/${getNextWorkId(work.id)}`}
+          className={styles.link}
+          aria-label="一つ後の制作物を見る"
+        >
           <MdArrowForwardIos className={styles.icon} />
         </Link>
       </nav>
