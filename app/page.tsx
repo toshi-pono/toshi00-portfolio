@@ -28,19 +28,19 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.article}>
-        <div>
+        <section>
           <Headline title="プロフィール" />
           <ul>
             <li>toshi00（とし）</li>
             <li>東京工業大学 情報工学系 B3</li>
             <li>デジタル創作同好会traP</li>
           </ul>
-        </div>
-        <div>
+        </section>
+        <section>
           <Headline title="言語とか" />
           <p>TypeScript / React / Vue / Go / Arduino / C</p>
-        </div>
-        <div>
+        </section>
+        <section>
           <Headline title="実績とか" />
           <ul>
             <li>WebSpeedHackathon for Student(2022)：2位</li>
@@ -49,13 +49,13 @@ export default function Home() {
           <Link href="/logs" className={styles.seeMore}>
             もっと見る
           </Link>
-        </div>
-        <div>
+        </section>
+        <section>
           <Headline title="リンク" />
           <ul>
             <li>
               <ExternalLink href="https://github.com/toshi-pono">
-                Github
+                GitHub
               </ExternalLink>
             </li>
             <li>
@@ -69,8 +69,8 @@ export default function Home() {
               </ExternalLink>
             </li>
           </ul>
-        </div>
-        <div className={styles.phoneOnly}>
+        </section>
+        <section className={`${styles.phoneOnly} ${styles.works}`}>
           <Headline title="制作物とか" />
           <ul>
             <li>
@@ -88,7 +88,7 @@ export default function Home() {
           <Link href="/works" className={styles.seeMore}>
             もっと見る
           </Link>
-        </div>
+        </section>
       </div>
     </div>
   )
