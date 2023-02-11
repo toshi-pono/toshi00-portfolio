@@ -12,6 +12,7 @@
     "test:e2e": "playwright test --grep @default",
     "test:e2e:all": "playwright test",
     "test:e2e:shot": "playwright test --grep @shot",
+    "test:url": "ts-node ./tests/data/url.test.ts",
     "test": "yarn prettier:check && yarn lint"
   },
   "dependencies": {
@@ -32,8 +33,11 @@
   "devDependencies": {
     "@axe-core/playwright": "^4.6.0",
     "@playwright/test": "^1.30.0",
+    "@types/node-fetch": "^2.6.2",
     "eslint-config-prettier": "^8.6.0",
+    "node-fetch": "2.6.9",
     "prettier": "^2.8.2",
-    "sass": "^1.57.1"
+    "sass": "^1.57.1",
+    "ts-node": "^10.9.1"
   }
 }
