@@ -337,3 +337,10 @@
     }
   }
 }
+
+// コンテンツ幅が小さくなったときのパディング調整
+@media screen and (min-aspect-ratio: 16/9) and (min-width: $smartphone-width) and (max-width: 1300px) {
+  .container .main .pageContainer {
+    padding: 16px 28px;
+  }
+}
