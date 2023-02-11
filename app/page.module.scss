@@ -94,7 +94,6 @@
     }
 
     ul {
-      list-style: none;
       padding-inline-start: 16px;
     }
     p {
@@ -115,5 +114,15 @@
   display: none;
   @media screen and (max-width: $smartphone-width) {
     display: block;
+  }
+}
+
+.works {
+  a {
+    text-decoration: none;
+    color: $color-link;
+    &:visited {
+      color: $color-link-visited;
+    }
   }
 }
