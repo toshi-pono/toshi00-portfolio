@@ -12,17 +12,13 @@ export default function Home() {
       <div className={styles.info}>
         <Image src="/bg/icon.svg" alt="" width={250} height={250} priority />
         <h1 className={styles.name}>とし / toshi00</h1>
-        <p className={styles.description}>
-          フロントエンドなど
-          <br />
-          ものづくりをしています
-        </p>
+        <p className={styles.description}>ものづくりをしています</p>
       </div>
       <div className={styles.phoneInfoContainer}>
         <div className={styles.phoneInfo}>
           <Image src="/bg/icon.svg" alt="" width={100} height={100} priority />
           <div className={styles.name}>
-            <p>フロントエンド & ものづくり</p>
+            <p>わくわくな ものづくり</p>
             <h1>toshi00</h1>
           </div>
         </div>
@@ -31,8 +27,7 @@ export default function Home() {
         <section>
           <Headline title="プロフィール" />
           <ul>
-            <li>toshi00（とし）</li>
-            <li>東京工業大学 情報工学系 B3</li>
+            <li>東京工業大学 情報工学系 B4</li>
             <li>デジタル創作同好会traP</li>
           </ul>
         </section>
@@ -43,8 +38,8 @@ export default function Home() {
         <section>
           <Headline title="実績とか" />
           <ul>
-            <li>WebSpeedHackathon for Student(2022)：2位</li>
-            <li>DeNAインターン2022：優勝</li>
+            <li>WebSpeedHackathon for Student(2022): 2位</li>
+            <li>DeNAインターン2022: 優勝</li>
           </ul>
           <Link href="/logs" className={styles.seeMore}>
             もっと見る
@@ -66,6 +61,11 @@ export default function Home() {
             <li>
               <ExternalLink href="https://trap.jp/author/toshi00/">
                 traPブログ
+              </ExternalLink>
+            </li>
+            <li>
+              <ExternalLink href="https://scrapbox.io/toshi00/">
+                scrapbox
               </ExternalLink>
             </li>
           </ul>
