@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
+import { Analytics } from '@vercel/analytics/react'
+
 import Footer from 'components/Footer'
 import Header from 'components/Header'
 
@@ -27,6 +29,7 @@ export default function RootLayout({
       </head>
       <body>
         <Background header={<Header />} footer={<Footer />} page={children} />
+        <Analytics />
       </body>
     </html>
   )
