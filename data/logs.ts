@@ -50,7 +50,7 @@ export const logs: Log[] = [
     id: 'webspeedhackathon',
     year: 2022,
     month: 3,
-    title: 'WebSpeedHackathon 2022 for Student：2位',
+    title: 'WebSpeedHackathon 2022 for Student: 2位',
     description:
       'Reactで作られたアプリケーションを高速化するイベントに参加しました',
     tags: ['イベント', '受賞'],
@@ -82,9 +82,24 @@ export const logs: Log[] = [
     id: 'DeNA',
     year: 2022,
     month: 9,
-    title: 'DeNA 短期インターン：優勝',
+    title: 'DeNA 短期インターン: 優勝',
     description: '3日間のハッカソンに参加しReactを用いて開発を行いました',
     tags: ['インターン', '受賞'],
+  },
+  {
+    id: 'UTEone2023',
+    year: 2023,
+    month: 2,
+    title: 'UTE1 チームtetoraSS 3位',
+    description:
+      'Webアプリケーションが正しく高速に動くよう改善するコンテストに参加しました',
+    tags: ['イベント', '受賞'],
+    links: [
+      {
+        name: 'UTE-1｜君は本当に「No.1」なのか？学生限定ITコンテスト',
+        url: 'https://uteone.jp/',
+      },
+    ],
   },
 ].sort((a, b) => {
   if (a.year === b.year) {
