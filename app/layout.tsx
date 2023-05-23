@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-page-custom-font */
 import { Analytics } from '@vercel/analytics/react'
+import { Noto_Sans_JP } from 'next/font/google'
 
 import Footer from 'components/Footer'
 import Header from 'components/Header'
@@ -8,6 +8,12 @@ import Background from './Background'
 
 import 'styles/globals.scss'
 
+const notoSansJP = Noto_Sans_JP({
+  weight: ['400', '500', '700'],
+  preload: false,
+  display: 'swap',
+})
+
 export default function RootLayout({
   children,
 }: {
@@ -15,19 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin=""
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body>
+      <body className={notoSansJP.className}>
         <Background header={<Header />} footer={<Footer />} page={children} />
         <Analytics />
       </body>
