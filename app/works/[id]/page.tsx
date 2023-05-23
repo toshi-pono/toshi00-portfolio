@@ -20,7 +20,7 @@ export async function generateStaticParams() {
   }))
 }
 
-const Work = ({ params }: { params?: any; children?: React.ReactNode }) => {
+const Work = ({ params }: { params: { id: string } }) => {
   const work = getWork(params.id)
 
   if (work === undefined) {
