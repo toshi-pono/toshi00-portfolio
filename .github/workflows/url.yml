@@ -19,12 +19,12 @@ jobs:
     name: check URLs
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
       with:
-        node-version-file: .node-version
-        cache: yarn
+        node-version-file: .tool-versions
+        cache: pnpm
     - name: Install dependencies
-      run: yarn install --frozen-lockfile
+      run: pnpm install --frozen-lockfile
     - name: CheckURL
-      run: yarn test:url
+      run: pnpm test:url

@@ -14,9 +14,31 @@ toshi00(とし) の制作物まとめサイトです。
 
 ## Development
 
-```bash
-yarn
-yarn dev
+```sh
+pnpm i
+pnpm dev
+```
+
+## Tests
+
+### lint
+
+```sh
+pnpm test
+```
+
+### e2e
+
+```sh
+pnpm exec playwright install
+pnpm build
+pnpm test:e2e
+```
+
+### urlが200を返すことを確認する
+
+```sh
+pnpm test:url
 ```
 
 ## Author

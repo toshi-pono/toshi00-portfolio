@@ -2,8 +2,8 @@ import { setTimeout } from 'timers/promises'
 
 import fetch from 'node-fetch'
 
-import { logs } from '../../data/logs'
-import { works } from '../../data/works'
+import { logs } from '../../src/data/logs'
+import { works } from '../../src/data/works'
 
 const TIME_OUT = 1000
 const skipURL = ['https://marketplace.visualstudio.com']
@@ -44,6 +44,7 @@ async function main() {
 
   if (success) {
     console.log('All success')
+    process.exit(0)
   } else {
     console.error('Some error')
     process.exit(1)

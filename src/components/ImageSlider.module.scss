@@ -1,0 +1,13 @@
+.slideImage {
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: auto;
+  object-fit: cover;
+  background-color: $color-bg-bottom;
+}
+
+.wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  contain: strict;
+}

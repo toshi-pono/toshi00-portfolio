@@ -1,0 +1,8 @@
+.link {
+  color: $color-link;
+  text-decoration: none;
+  vertical-align: middle;
+  &:visited {
+    color: $color-link-visited;
+  }
+}
