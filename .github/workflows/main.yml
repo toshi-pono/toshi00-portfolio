@@ -13,18 +13,18 @@ concurrency:
 jobs:
   packages:
     timeout-minutes: 10
-    name: check yarn install
+    name: check pnpm install
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
-          cache: yarn
-      - name: check yarn install
-        run: yarn install --frozen-lockfile
+          cache: pnpm
+      - name: check pnpm install
+        run: pnpm install --frozen-lockfile
   lint:
     timeout-minutes: 10
     name: run lint
@@ -32,16 +32,16 @@ jobs:
     needs: [packages]
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
-          cache: yarn
-      - name: yarn install
-        run: yarn install --frozen-lockfile
+          cache: pnpm
+      - name: pnpm install
+        run: pnpm install --frozen-lockfile
       - name: run lint
-        run: yarn lint
+        run: pnpm lint
   format:
     timeout-minutes: 10
     name: run format
@@ -49,13 +49,13 @@ jobs:
     needs: [packages]
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
-          cache: yarn
-      - name: yarn install
-        run: yarn install --frozen-lockfile
+          cache: pnpm
+      - name: pnpm install
+        run: pnpm install --frozen-lockfile
       - name: run format
-        run: yarn prettier:check
+        run: pnpm prettier:check
