@@ -44,6 +44,7 @@ async function main() {
 
   if (success) {
     console.log('All success')
+    process.exit(0)
   } else {
     console.error('Some error')
     process.exit(1)
