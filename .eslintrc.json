@@ -18,7 +18,7 @@
         "alphabetize": { "order": "asc", "caseInsensitive": true },
         "pathGroups": [
           {
-            "pattern": "components/**",
+            "pattern": "@/**",
             "group": "internal",
             "position": "before"
           },

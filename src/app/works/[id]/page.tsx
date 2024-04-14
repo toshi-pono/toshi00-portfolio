@@ -7,10 +7,9 @@ import {
   MdUpdate,
 } from 'react-icons/md'
 
-import ExternalLink from 'components/ExternalLink'
-import ImageSlider from 'components/ImageSlider'
-
-import { works, getWork, getNextWorkId, getPrevWorkId } from 'data/works'
+import ExternalLink from '@/components/ExternalLink'
+import ImageSlider from '@/components/ImageSlider'
+import { works, getWork, getNextWorkId, getPrevWorkId } from '@/data/works'
 
 import styles from './page.module.scss'
 

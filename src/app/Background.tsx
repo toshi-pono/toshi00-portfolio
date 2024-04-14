@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useCallback, useState } from 'react'
 
-import FullScreenButton from 'components/FullScreenButton'
+import FullScreenButton from '@/components/FullScreenButton'
 
 import styles from './Background.module.scss'
 

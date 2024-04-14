@@ -3,9 +3,8 @@
 import { useSearchParams, useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
 
-import TagList from 'components/TagList'
-
-import { filterWorks, tags } from 'data/works'
+import TagList from '@/components/TagList'
+import { filterWorks, tags } from '@/data/works'
 
 import Card from './Card'
 import styles from './WorkList.module.scss'
@@ -21,7 +20,7 @@ const WorkList = () => {
   const router = useRouter()
 
   const [selectedTags, setSelectedTags] = useState<string[]>(
-    parseTags(selectedTagQuery)
+    parseTags(selectedTagQuery),
   )
   const works = filterWorks(selectedTags)
   const handleChange = (tag: string) => {

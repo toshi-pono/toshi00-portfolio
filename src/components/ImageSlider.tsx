@@ -2,7 +2,7 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import Image from 'next/image'
 
-import { toImagePath, WorkImage } from 'data/works'
+import { toImagePath, WorkImage } from '@/data/works'
 
 import styles from './ImageSlider.module.scss'
 import '@splidejs/react-splide/css'

@@ -2,12 +2,12 @@ import { Analytics } from '@vercel/analytics/react'
 import { Metadata } from 'next'
 import { Noto_Sans_JP } from 'next/font/google'
 
-import Footer from 'components/Footer'
-import Header from 'components/Header'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 
 import Background from './Background'
 
-import 'styles/globals.scss'
+import '@/styles/globals.scss'
 
 export const metadata: Metadata = {
   title: {

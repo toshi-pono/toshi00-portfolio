@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import ExternalLink from 'components/ExternalLink'
-import Headline from 'components/Headline'
+import ExternalLink from '@/components/ExternalLink'
+import Headline from '@/components/Headline'
 
 import styles from './page.module.scss'
 

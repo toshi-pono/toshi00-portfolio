@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-import { filterLogs, tags, defaultTags } from 'data/logs'
+import { filterLogs, tags, defaultTags } from '@/data/logs'
 
 import LogCard from './LogCard'
 import styles from './page.module.scss'

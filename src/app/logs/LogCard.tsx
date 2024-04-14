@@ -1,6 +1,5 @@
-import ExternalLink from 'components/ExternalLink'
-
-import { Log } from 'data/logs'
+import ExternalLink from '@/components/ExternalLink'
+import { Log } from '@/data/logs'
 
 import styles from './LogCard.module.scss'
 

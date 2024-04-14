@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { toImagePath, Work } from 'data/works'
+import { toImagePath, Work } from '@/data/works'
 
 import styles from './Card.module.scss'
 
