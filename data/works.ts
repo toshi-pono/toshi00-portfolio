@@ -21,6 +21,76 @@ export interface Work {
 
 export const works: Work[] = [
   {
+    id: 'MonoEye',
+    title: 'MonoEye mobile',
+    subtitle: 'ウェアラブル姿勢推定',
+    date: '2023/12',
+    description:
+      '胸部に装着した魚眼カメラを用いて姿勢推定するシステムの高速化とウェアラブル化に取り組みました。モデルの推論高速化、推論パイプラインの構築やwebビューの実装を行いました。',
+    links: [
+      {
+        name: '第31回インタラクティブシステムとソフトウェアに関するワークショップ(WISS 2023)',
+        url: 'https://www.wiss.org/WISS2023Proceedings/data/2-B01.pdf',
+      },
+    ],
+    images: [
+      {
+        path: 'monoeye.webp',
+        alt: 'MonoEye mobileは魚眼カメラを用いて姿勢推定を行うウェアラブルシステムです。',
+      },
+      {
+        path: 'monoeye_overview.webp',
+        alt: '胸部装着型ウェアラブル姿勢推定システム',
+      },
+      {
+        path: 'monoeye_system.webp',
+        alt: '魚眼画像を取得しJetsonOrinNano上の推論モデルで姿勢推定',
+      },
+      {
+        path: 'monoeye_example.webp',
+        alt: '場所に依存せず利用できるため、ライフログデバイスやスキル向上支援に活用可能',
+      },
+    ],
+    techs: ['Python', 'ONNX'],
+    tags: ['研究'],
+    color: '#eeded3',
+  },
+  {
+    id: 'mikage',
+    title: 'Mikage',
+    subtitle: 'Gaussian Splatting',
+    date: '2023/09',
+    description:
+      'Gaussian Splattingを用いて3Dシーンの保存・閲覧ができるプラットフォームです。\n\nDIGI-CON HACKATHON 2023にて制作。画像処理などを担当',
+    links: [
+      {
+        name: 'DIGI-CON HACKATHON 2023『Mikage』',
+        url: 'https://trap.jp/post/2031/',
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/cat-crosswalk/mikage-client',
+      },
+    ],
+    images: [
+      {
+        path: 'mikage.webp',
+        alt: 'MikageはGaussian Splattingを用いて3Dシーンの保存・閲覧ができるプラットフォームです',
+      },
+      {
+        path: 'mikage_issue.webp',
+        alt: 'Mikageは資料集め・資料管理の難しさを、撮影した空間を好きな角度から眺めるという手法で解決します',
+      },
+      {
+        path: 'mikage_main.webp',
+        alt: 'Gaussian Splattingを用いて画像を3次元点群に変換することで、好きな角度から眺めることが可能になります',
+      },
+    ],
+    techs: ['Python'],
+    tags: ['ハッカソン'],
+    color: '#202326',
+  },
+  {
     id: 'fooder',
     title: 'Fooder',
     subtitle: 'レストラン即決サービス',
