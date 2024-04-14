@@ -18,27 +18,27 @@
   },
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
-    "@types/node": "20.2.3",
+    "@types/node": "20.12.7",
     "@types/react": "^18.2.78",
     "@types/react-dom": "^18.2.25",
     "@vercel/analytics": "^1.2.2",
-    "eslint": "8.41.0",
-    "eslint-config-next": "13.4.3",
-    "next": "13.4.3",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.2.1",
+    "next": "14.2.1",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.12.0",
-    "sharp": "^0.32.6",
-    "typescript": "4.9.4"
+    "react-icons": "^5.0.1",
+    "sharp": "^0.33.3",
+    "typescript": "5.4.5"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.9.0",
     "@playwright/test": "^1.43.1",
     "@types/node-fetch": "^2.6.11",
-    "eslint-config-prettier": "^8.10.0",
-    "node-fetch": "2.6.9",
-    "prettier": "^2.8.8",
+    "eslint-config-prettier": "^9.1.0",
+    "node-fetch": "3.3.2",
+    "prettier": "^3.2.5",
     "sass": "^1.75.0",
     "ts-node": "^10.9.2"
   }

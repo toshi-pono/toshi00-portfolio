@@ -17,7 +17,6 @@ export const metadata: Metadata = {
   },
   description: 'ものづくりをしています。toshi00のポートフォリオです',
   keywords: ['toshi00', 'portfolio', 'web', 'frontend', 'ものづくり'],
-  viewport: 'width=device-width, initial-scale=1',
   creator: 'toshi00',
   twitter: {
     card: 'summary_large_image',
