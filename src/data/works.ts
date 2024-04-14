@@ -21,7 +21,7 @@ export interface Work {
 
 export const works: Work[] = [
   {
-    id: 'MonoEye',
+    id: 'monoeye',
     title: 'MonoEye mobile',
     subtitle: 'ウェアラブル姿勢推定',
     date: '2023/12',
