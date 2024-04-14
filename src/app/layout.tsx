@@ -10,6 +10,7 @@ import Background from './Background'
 import '@/styles/globals.scss'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://toshi00.dev'),
   title: {
     absolute: 'about | toshi00.dev',
     template: '%s | toshi00.dev',
