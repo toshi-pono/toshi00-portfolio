@@ -18,22 +18,22 @@ export default function Home() {
         <div className={styles.phoneInfo}>
           <Image src="/bg/icon.svg" alt="" width={100} height={100} priority />
           <div className={styles.name}>
-            <p>わくわくな ものづくり</p>
+            <p>ものづくりをしています</p>
             <h1>toshi00</h1>
           </div>
         </div>
       </div>
       <div className={styles.article}>
         <section>
-          <Headline title="プロフィール" />
+          <Headline title="所属" />
           <ul>
-            <li>東京工業大学 情報工学系 B4</li>
+            <li>東京工業大学 情報工学系 M1</li>
             <li>デジタル創作同好会traP</li>
           </ul>
         </section>
         <section>
           <Headline title="言語とか" />
-          <p>TypeScript / React / Vue / Go / Arduino / C</p>
+          <p>TypeScript / React / Vue / Go / Python</p>
         </section>
         <section>
           <Headline title="実績とか" />
@@ -41,9 +41,6 @@ export default function Home() {
             <li>WebSpeedHackathon for Student(2022): 2位</li>
             <li>DeNAインターン2022: 優勝</li>
           </ul>
-          <Link href="/logs" className={styles.seeMore}>
-            もっと見る
-          </Link>
         </section>
         <section>
           <Headline title="リンク" />
@@ -63,16 +60,16 @@ export default function Home() {
                 traPブログ
               </ExternalLink>
             </li>
-            <li>
-              <ExternalLink href="https://scrapbox.io/toshi00/">
-                scrapbox
-              </ExternalLink>
-            </li>
           </ul>
         </section>
         <section className={`${styles.phoneOnly} ${styles.works}`}>
           <Headline title="制作物とか" />
           <ul>
+            <li>
+              <Link href="/works/monoeye">
+                ウェアラブル姿勢推定システム MonoEye mobile
+              </Link>
+            </li>
             <li>
               <Link href="/works/fooder">ごはん屋さん即決アプリ Fooder</Link>
             </li>
@@ -80,9 +77,6 @@ export default function Home() {
               <Link href="/works/typoime">
                 エンジニアは絶対に使えないRust製IME TypoIME
               </Link>
-            </li>
-            <li>
-              <Link href="/works/root-san">グループ割り勘計算アプリ ROOT3</Link>
             </li>
           </ul>
           <Link href="/works" className={styles.seeMore}>
