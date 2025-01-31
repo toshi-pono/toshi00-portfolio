@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/react'
 import { Metadata } from 'next'
 import { Noto_Sans_JP } from 'next/font/google'
 
@@ -48,7 +47,6 @@ export default function RootLayout({
     <html lang="ja">
       <body className={notoSansJP.className}>
         <Background header={<Header />} footer={<Footer />} page={children} />
-        <Analytics />
       </body>
     </html>
   )
