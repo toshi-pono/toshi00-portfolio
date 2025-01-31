@@ -50,5 +50,6 @@
     "patchedDependencies": {
       "@splidejs/react-splide": "patches/@splidejs__react-splide.patch"
     }
-  }
+  },
+  "packageManager": "pnpm@9.15.4"
 }
