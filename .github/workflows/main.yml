@@ -18,9 +18,9 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 9
       - name: setup Node
         uses: actions/setup-node@v4
         with:
@@ -36,9 +36,9 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 9
       - name: setup Node
         uses: actions/setup-node@v4
         with:
@@ -56,9 +56,9 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 9
       - name: setup Node
         uses: actions/setup-node@v4
         with:
