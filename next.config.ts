@@ -5,7 +5,7 @@ import type { NextConfig } from 'next'
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   sassOptions: {
-    prependData: `@use "${path.resolve(__dirname, 'src/styles/variables.scss')}";`,
+    additionalData: `@use "${path.resolve(__dirname, 'src/styles/variables.scss')}" as *;`,
   },
   experimental: {
     typedRoutes: true,
