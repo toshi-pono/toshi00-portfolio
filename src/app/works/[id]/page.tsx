@@ -19,8 +19,9 @@ export async function generateStaticParams() {
   }))
 }
 
-const Work = ({ params }: { params: { id: string } }) => {
-  const work = getWork(params.id)
+const Work = async ({ params }: { params: Promise<{ id: string }> }) => {
+  const { id: workId } = await params
+  const work = await getWork(workId)
 
   if (work === undefined) {
     notFound()
