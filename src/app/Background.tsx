@@ -14,7 +14,7 @@ interface Props {
   page: React.ReactNode
 }
 
-const Background = ({ page, header, footer }: Props) => {
+const Background = ({ page, header }: Props) => {
   const pathname = usePathname()
   const [isZooming, setIsZooming] = useState(false)
   const onChange = useCallback(() => {

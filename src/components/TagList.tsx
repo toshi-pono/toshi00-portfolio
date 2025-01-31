@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 import styles from './TagList.module.scss'
 
 interface Props {
