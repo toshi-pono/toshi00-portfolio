@@ -97,7 +97,7 @@ export const logs: Log[] = [
     links: [
       {
         name: 'UTE-1｜君は本当に「No.1」なのか？学生限定ITコンテスト',
-        url: 'https://uteone.jp/',
+        url: 'https://x.com/traPisct/status/1629417166176141314',
       },
     ],
   },

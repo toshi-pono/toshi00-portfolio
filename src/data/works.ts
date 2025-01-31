@@ -342,7 +342,7 @@ export const works: Work[] = [
   },
 ]
 
-export const getWork = (id: string): Work | undefined => {
+export const getWork = async (id: string): Promise<Work | undefined> => {
   return works.find((work) => work.id === id)
 }
 
