@@ -49,6 +49,12 @@
   "pnpm": {
     "patchedDependencies": {
       "@splidejs/react-splide": "patches/@splidejs__react-splide.patch"
+    },
+    "overrides": {
+      "tar@<6.2.1": ">=6.2.1",
+      "cookie@<0.7.0": ">=0.7.0",
+      "undici@>=4.5.0 <5.28.5": ">=5.28.5",
+      "path-to-regexp@>=4.0.0 <6.3.0": ">=6.3.0"
     }
   },
   "packageManager": "pnpm@9.15.4"
