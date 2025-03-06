@@ -6,7 +6,7 @@ import { logs } from '../../src/data/logs'
 import { works } from '../../src/data/works'
 
 const TIME_OUT = 1000
-const skipURL = ['https://marketplace.visualstudio.com']
+const skipURL = ['https://marketplace.visualstudio.com', 'https://x.com']
 
 async function urlTest(url: string): Promise<boolean> {
   if (skipURL.some((s) => url.startsWith(s))) {
