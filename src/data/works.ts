@@ -21,6 +21,41 @@ export interface Work {
 
 export const works: Work[] = [
   {
+    id: 'alchemycode',
+    title: 'AlchemyCode',
+    date: '2024/08',
+    subtitle: '魔法陣風ARマーカー',
+    description:
+      '魔法陣風ARマーカーの設計と読み取りパイプラインの構築を行いました。',
+    links: [
+      {
+        name: 'MIRU2024',
+        url: 'https://miru-committee.github.io/miru2024/',
+      },
+    ],
+    images: [
+      {
+        path: 'alchemycode.webp',
+        alt: 'AlchemyCodeはスマートフォンで読み取り可能な魔法陣風ARマーカーです',
+      },
+      {
+        path: 'alchemycode_pipeline.webp',
+        alt: 'AlchemyCodeを読み取るための機械学習パイプライン',
+      },
+      {
+        path: 'alchemycode_pattern.webp',
+        alt: 'AlchemyCodeの設計',
+      },
+      {
+        path: 'alchemycode_examples.webp',
+        alt: 'AlchemyCodeの読み取り例',
+      },
+    ],
+    tags: ['研究', 'ハッカソン'],
+    techs: ['Python', 'OpenCV'],
+    color: '#e8e7e3',
+  },
+  {
     id: 'monoeye',
     title: 'MonoEye mobile',
     subtitle: 'ウェアラブル姿勢推定',
