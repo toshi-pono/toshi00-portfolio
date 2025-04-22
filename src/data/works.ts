@@ -66,19 +66,19 @@ export const works: Work[] = [
     ],
     images: [
       {
-        path: 'alchemycode.webp',
+        path: 'alchemycode/alchemycode.webp',
         alt: 'AlchemyCodeはスマートフォンで読み取り可能な魔法陣風ARマーカーです',
       },
       {
-        path: 'alchemycode_pipeline.webp',
+        path: 'alchemycode/alchemycode_pipeline.webp',
         alt: 'AlchemyCodeを読み取るための機械学習パイプライン',
       },
       {
-        path: 'alchemycode_pattern.webp',
+        path: 'alchemycode/alchemycode_pattern.webp',
         alt: 'AlchemyCodeの設計',
       },
       {
-        path: 'alchemycode_examples.webp',
+        path: 'alchemycode/alchemycode_examples.webp',
         alt: 'AlchemyCodeの読み取り例',
       },
     ],
@@ -221,10 +221,10 @@ export const works: Work[] = [
       },
     ],
     images: [
-      { path: 'fooder.webp', alt: 'fooderのロゴ' },
-      { path: 'fooder_question.webp', alt: 'fooderの質問画面' },
-      { path: 'fooder_flow.webp', alt: 'fooder利用の流れ' },
-      { path: 'fooder_tech.webp', alt: 'fooderの技術スタック' },
+      { path: 'fooder/fooder.webp', alt: 'fooderのロゴ' },
+      { path: 'fooder/fooder_question.webp', alt: 'fooderの質問画面' },
+      { path: 'fooder/fooder_flow.webp', alt: 'fooder利用の流れ' },
+      { path: 'fooder/fooder_tech.webp', alt: 'fooderの技術スタック' },
     ],
     techs: ['Go', 'Vue'],
     tags: ['ハッカソン', 'Web'],
