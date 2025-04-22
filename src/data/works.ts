@@ -21,6 +21,37 @@ export interface Work {
 
 export const works: Work[] = [
   {
+    id: 'slopenav',
+    title: 'SlopeNav',
+    subtitle: 'ブラインドスキー支援システム',
+    date: '2025/02',
+    description:
+      'ブラインドスキーを支援するためのシステムです。シミュレーション環境において、カメラを用いて障害物を検知し、ターンに基づく経路を設計、音声ガイドで誘導します。',
+    links: [
+      {
+        name: 'Augmented Humans 2025',
+        url: 'https://augmented-humans.org/program/',
+      },
+    ],
+    images: [
+      {
+        path: 'slopenav.webp',
+        alt: 'SlopeNavはブラインドスキーを支援するためのシステムです',
+      },
+      {
+        path: 'slopenav_system.webp',
+        alt: 'カメラを用いて障害物を検知し、ターンに基づく経路を設計、音声ガイドで誘導します',
+      },
+      {
+        path: 'slopenav_path.webp',
+        alt: 'ターンに基づく経路を設計',
+      },
+    ],
+    techs: ['Python', 'OpenCV'],
+    tags: ['研究'],
+    color: '#ebdfcf',
+  },
+  {
     id: 'alchemycode',
     title: 'AlchemyCode',
     date: '2024/08',
