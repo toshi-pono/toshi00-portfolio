@@ -101,6 +101,31 @@ export const logs: Log[] = [
       },
     ],
   },
+  {
+    id: 'recruit2025',
+    year: 2024,
+    month: 9,
+    title: 'RECRUIT INTERNSHIP for Data Specialists 2024',
+    description:
+      'データエンジニアとしてインターンシップに参加し、プロンプトエンジニアリングの実験管理基盤の構築を行いました',
+    tags: ['インターン'],
+  },
+  {
+    id: 'ISUCON 14',
+    year: 2024,
+    month: 12,
+    title: 'ISUCON 14',
+    description: 'チームtetoraとして参加し、MIXI賞/学生3位となりました',
+    tags: ['イベント', '受賞'],
+  },
+  {
+    id: 'git_challenge',
+    year: 2024,
+    month: 8,
+    title: 'git challenge #14',
+    description: 'Gitのトラブル解決を行うイベントに参加し、優勝しました',
+    tags: ['イベント', '受賞'],
+  },
 ].sort((a, b) => {
   if (a.year === b.year) {
     return b.month - a.month
