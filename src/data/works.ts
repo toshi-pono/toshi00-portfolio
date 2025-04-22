@@ -122,6 +122,49 @@ export const works: Work[] = [
     color: '#eeded3',
   },
   {
+    id: 'aiotraq',
+    title: 'AiotraQ',
+    subtitle: 'traQ向けBotメッセージ送信ライブラリ',
+    date: '2024/06',
+    description:
+      'PythonでtraQ Botを高速に開発するためのライブラリです。宣言的に記述できるため、traQのAPIを意識せずにBotを開発できます',
+    links: [
+      {
+        name: 'AiotraQ',
+        url: 'https://toshi-pono.github.io/aiotraq/',
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/toshi-pono/aiotraq',
+      },
+      {
+        name: '発表スライド',
+        url: 'https://speakerdeck.com/toshi00/aiotraqdebao-su-botkai-fa',
+      },
+    ],
+    images: [
+      {
+        path: 'aiotraq/aiotraq.webp',
+        alt: 'AiotraQはtraQ Botを高速に開発するためのライブラリです',
+      },
+      {
+        path: 'aiotraq/aiotraq_background.webp',
+        alt: 'LLMのローディング表示や画像の表示を手軽にできるtraQBotライブラリが欲しい',
+      },
+      {
+        path: 'aiotraq/aiotraq_propopsed.webp',
+        alt: 'AiotraQはtraQのAPIを意識せずにBotを開発できます',
+      },
+      {
+        path: 'aiotraq/aiotraq_example.webp',
+        alt: 'AiotraQを用いたtraQ Botの例',
+      },
+    ],
+    techs: ['Python', 'CI/CD'],
+    tags: ['個人開発'],
+    color: '#33a7e5',
+  },
+  {
     id: 'mikage',
     title: 'Mikage',
     subtitle: 'Gaussian Splatting',
