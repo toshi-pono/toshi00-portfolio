@@ -113,9 +113,9 @@ export const works: Work[] = [
     ],
     images: [
       { path: 'fooder.webp', alt: 'fooderのロゴ' },
-      { path: 'fooder_question.png', alt: 'fooderの質問画面' },
-      { path: 'fooder_flow.png', alt: 'fooder利用の流れ' },
-      { path: 'fooder_tech.png', alt: 'fooderの技術スタック' },
+      { path: 'fooder_question.webp', alt: 'fooderの質問画面' },
+      { path: 'fooder_flow.webp', alt: 'fooder利用の流れ' },
+      { path: 'fooder_tech.webp', alt: 'fooderの技術スタック' },
     ],
     techs: ['Go', 'Vue'],
     tags: ['ハッカソン', 'Web'],
@@ -139,7 +139,7 @@ export const works: Work[] = [
       },
     ],
     images: [
-      { path: 'typoime.png', alt: 'IME自作のすすめ' },
+      { path: 'typoime.webp', alt: 'IME自作のすすめ' },
       { path: 'typoime_desc.webp', alt: '0とOなど似た文字に変換する' },
       { path: 'typoime_demo.gif', alt: '文字入力している様子' },
     ],
@@ -165,10 +165,10 @@ export const works: Work[] = [
       },
     ],
     images: [
-      { path: 'poketch.png', alt: 'ポケッチの外観' },
-      { path: 'poketch_note.png', alt: 'ノート機能の実例' },
+      { path: 'poketch.webp', alt: 'ポケッチの外観' },
+      { path: 'poketch_note.webp', alt: 'ノート機能の実例' },
       {
-        path: 'poketch_band.png',
+        path: 'poketch_band.webp',
         alt: '3Dプリンタを使って腕時計バンドを取り付けた',
       },
     ],
@@ -200,15 +200,15 @@ export const works: Work[] = [
     images: [
       { path: 'nascalay.webp', alt: 'nascalayで遊んでいる様子' },
       {
-        path: 'nascalay_howtoplay.png',
+        path: 'nascalay_howtoplay.webp',
         alt: 'キャンバスを分割して、最後にまとめる',
       },
       {
-        path: 'nascalay_canvas.png',
+        path: 'nascalay_canvas.webp',
         alt: '画面中央のキャンバスに絵を書いて送信する',
       },
       {
-        path: 'nascalay_example.png',
+        path: 'nascalay_example.webp',
         alt: '結果',
       },
     ],
@@ -234,16 +234,16 @@ export const works: Work[] = [
       },
     ],
     images: [
-      { path: 'root3.png', alt: 'ROOT3コンセプト画像' },
+      { path: 'root3.webp', alt: 'ROOT3コンセプト画像' },
       {
-        path: 'root3_explain.png',
+        path: 'root3_explain.webp',
         alt: 'ROOT3は割り勘計算を簡単に記録計算できるサービスです',
       },
       {
-        path: 'root3_view1.png',
+        path: 'root3_view1.webp',
         alt: 'グループを作成し、招待QRコードを読み込んで、出費を記録します。あとは好きなときに精算するだけ！',
       },
-      { path: 'root3_view2.png', alt: 'PWAにも対応しています' },
+      { path: 'root3_view2.webp', alt: 'PWAにも対応しています' },
     ],
     techs: ['React'],
     tags: ['ハッカソン', 'Web'],
@@ -264,11 +264,11 @@ export const works: Work[] = [
     ],
     images: [
       {
-        path: 'jtag.png',
+        path: 'jtag.webp',
         alt: 'JTAG Adapterの写真',
       },
       {
-        path: 'jtag_kicad.png',
+        path: 'jtag_kicad.webp',
         alt: 'JTAG Adapterの3D図',
       },
     ],
@@ -294,7 +294,7 @@ export const works: Work[] = [
       },
     ],
     images: [
-      { path: 'typoime-vscode.png', alt: 'TypoIME-VSCodeのストアの写真' },
+      { path: 'typoime-vscode.webp', alt: 'TypoIME-VSCodeのストアの写真' },
     ],
     techs: ['VSCode', 'TypeScript'],
     tags: ['個人開発'],
@@ -317,7 +317,7 @@ export const works: Work[] = [
         url: 'https://trap.jp/post/1321/',
       },
     ],
-    images: [{ path: 'linq.png', alt: 'linQサービス画像' }],
+    images: [{ path: 'linq.webp', alt: 'linQサービス画像' }],
     techs: ['Go'],
     tags: ['ハッカソン', 'Web'],
     color: '#E5F6EF',
@@ -335,7 +335,7 @@ export const works: Work[] = [
         url: 'https://github.com/toshi-pono/toshi00-portfolio',
       },
     ],
-    images: [{ path: 'portfolio.png', alt: 'ポートフォリオコンセプト画像' }],
+    images: [{ path: 'portfolio.webp', alt: 'ポートフォリオコンセプト画像' }],
     techs: ['Next.js'],
     tags: ['個人開発', 'Web'],
     color: '#ECF2FB',
