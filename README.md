@@ -43,4 +43,4 @@ pnpm test:url
 
 ## Author
 
-[twitter](https://twitter.com/toshi00_p)
+[x(twitter)](https://x.com/toshi00_p)
