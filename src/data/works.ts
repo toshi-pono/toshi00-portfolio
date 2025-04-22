@@ -21,6 +21,72 @@ export interface Work {
 
 export const works: Work[] = [
   {
+    id: 'slopenav',
+    title: 'SlopeNav',
+    subtitle: 'ブラインドスキー支援システム',
+    date: '2025/02',
+    description:
+      'ブラインドスキーを支援するためのシステムです。シミュレーション環境において、カメラを用いて障害物を検知し、ターンに基づく経路を設計、音声ガイドで誘導します。',
+    links: [
+      {
+        name: 'Augmented Humans 2025',
+        url: 'https://augmented-humans.org/program/',
+      },
+    ],
+    images: [
+      {
+        path: 'slopenav.webp',
+        alt: 'SlopeNavはブラインドスキーを支援するためのシステムです',
+      },
+      {
+        path: 'slopenav_system.webp',
+        alt: 'カメラを用いて障害物を検知し、ターンに基づく経路を設計、音声ガイドで誘導します',
+      },
+      {
+        path: 'slopenav_path.webp',
+        alt: 'ターンに基づく経路を設計',
+      },
+    ],
+    techs: ['Python', 'OpenCV'],
+    tags: ['研究'],
+    color: '#ebdfcf',
+  },
+  {
+    id: 'alchemycode',
+    title: 'AlchemyCode',
+    date: '2024/08',
+    subtitle: '魔法陣風ARマーカー',
+    description:
+      '魔法陣風ARマーカーの設計と読み取りパイプラインの構築を行いました。',
+    links: [
+      {
+        name: 'MIRU2024',
+        url: 'https://miru-committee.github.io/miru2024/',
+      },
+    ],
+    images: [
+      {
+        path: 'alchemycode/alchemycode.webp',
+        alt: 'AlchemyCodeはスマートフォンで読み取り可能な魔法陣風ARマーカーです',
+      },
+      {
+        path: 'alchemycode/alchemycode_pipeline.webp',
+        alt: 'AlchemyCodeを読み取るための機械学習パイプライン',
+      },
+      {
+        path: 'alchemycode/alchemycode_pattern.webp',
+        alt: 'AlchemyCodeの設計',
+      },
+      {
+        path: 'alchemycode/alchemycode_examples.webp',
+        alt: 'AlchemyCodeの読み取り例',
+      },
+    ],
+    tags: ['研究', 'ハッカソン'],
+    techs: ['Python', 'OpenCV'],
+    color: '#e8e7e3',
+  },
+  {
     id: 'monoeye',
     title: 'MonoEye mobile',
     subtitle: 'ウェアラブル姿勢推定',
@@ -54,6 +120,49 @@ export const works: Work[] = [
     techs: ['Python', 'ONNX'],
     tags: ['研究'],
     color: '#eeded3',
+  },
+  {
+    id: 'aiotraq',
+    title: 'AiotraQ',
+    subtitle: 'traQ向けBotメッセージ送信ライブラリ',
+    date: '2024/06',
+    description:
+      'PythonでtraQ Botを高速に開発するためのライブラリです。宣言的に記述できるため、traQのAPIを意識せずにBotを開発できます',
+    links: [
+      {
+        name: 'AiotraQ',
+        url: 'https://toshi-pono.github.io/aiotraq/',
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/toshi-pono/aiotraq',
+      },
+      {
+        name: '発表スライド',
+        url: 'https://speakerdeck.com/toshi00/aiotraqdebao-su-botkai-fa',
+      },
+    ],
+    images: [
+      {
+        path: 'aiotraq/aiotraq.webp',
+        alt: 'AiotraQはtraQ Botを高速に開発するためのライブラリです',
+      },
+      {
+        path: 'aiotraq/aiotraq_background.webp',
+        alt: 'LLMのローディング表示や画像の表示を手軽にできるtraQBotライブラリが欲しい',
+      },
+      {
+        path: 'aiotraq/aiotraq_propopsed.webp',
+        alt: 'AiotraQはtraQのAPIを意識せずにBotを開発できます',
+      },
+      {
+        path: 'aiotraq/aiotraq_example.webp',
+        alt: 'AiotraQを用いたtraQ Botの例',
+      },
+    ],
+    techs: ['Python', 'CI/CD'],
+    tags: ['個人開発'],
+    color: '#33a7e5',
   },
   {
     id: 'mikage',
@@ -112,10 +221,10 @@ export const works: Work[] = [
       },
     ],
     images: [
-      { path: 'fooder.webp', alt: 'fooderのロゴ' },
-      { path: 'fooder_question.png', alt: 'fooderの質問画面' },
-      { path: 'fooder_flow.png', alt: 'fooder利用の流れ' },
-      { path: 'fooder_tech.png', alt: 'fooderの技術スタック' },
+      { path: 'fooder/fooder.webp', alt: 'fooderのロゴ' },
+      { path: 'fooder/fooder_question.webp', alt: 'fooderの質問画面' },
+      { path: 'fooder/fooder_flow.webp', alt: 'fooder利用の流れ' },
+      { path: 'fooder/fooder_tech.webp', alt: 'fooderの技術スタック' },
     ],
     techs: ['Go', 'Vue'],
     tags: ['ハッカソン', 'Web'],
@@ -139,7 +248,7 @@ export const works: Work[] = [
       },
     ],
     images: [
-      { path: 'typoime.png', alt: 'IME自作のすすめ' },
+      { path: 'typoime.webp', alt: 'IME自作のすすめ' },
       { path: 'typoime_desc.webp', alt: '0とOなど似た文字に変換する' },
       { path: 'typoime_demo.gif', alt: '文字入力している様子' },
     ],
@@ -165,10 +274,10 @@ export const works: Work[] = [
       },
     ],
     images: [
-      { path: 'poketch.png', alt: 'ポケッチの外観' },
-      { path: 'poketch_note.png', alt: 'ノート機能の実例' },
+      { path: 'poketch.webp', alt: 'ポケッチの外観' },
+      { path: 'poketch_note.webp', alt: 'ノート機能の実例' },
       {
-        path: 'poketch_band.png',
+        path: 'poketch_band.webp',
         alt: '3Dプリンタを使って腕時計バンドを取り付けた',
       },
     ],
@@ -200,15 +309,15 @@ export const works: Work[] = [
     images: [
       { path: 'nascalay.webp', alt: 'nascalayで遊んでいる様子' },
       {
-        path: 'nascalay_howtoplay.png',
+        path: 'nascalay_howtoplay.webp',
         alt: 'キャンバスを分割して、最後にまとめる',
       },
       {
-        path: 'nascalay_canvas.png',
+        path: 'nascalay_canvas.webp',
         alt: '画面中央のキャンバスに絵を書いて送信する',
       },
       {
-        path: 'nascalay_example.png',
+        path: 'nascalay_example.webp',
         alt: '結果',
       },
     ],
@@ -234,16 +343,16 @@ export const works: Work[] = [
       },
     ],
     images: [
-      { path: 'root3.png', alt: 'ROOT3コンセプト画像' },
+      { path: 'root3.webp', alt: 'ROOT3コンセプト画像' },
       {
-        path: 'root3_explain.png',
+        path: 'root3_explain.webp',
         alt: 'ROOT3は割り勘計算を簡単に記録計算できるサービスです',
       },
       {
-        path: 'root3_view1.png',
+        path: 'root3_view1.webp',
         alt: 'グループを作成し、招待QRコードを読み込んで、出費を記録します。あとは好きなときに精算するだけ！',
       },
-      { path: 'root3_view2.png', alt: 'PWAにも対応しています' },
+      { path: 'root3_view2.webp', alt: 'PWAにも対応しています' },
     ],
     techs: ['React'],
     tags: ['ハッカソン', 'Web'],
@@ -264,11 +373,11 @@ export const works: Work[] = [
     ],
     images: [
       {
-        path: 'jtag.png',
+        path: 'jtag.webp',
         alt: 'JTAG Adapterの写真',
       },
       {
-        path: 'jtag_kicad.png',
+        path: 'jtag_kicad.webp',
         alt: 'JTAG Adapterの3D図',
       },
     ],
@@ -294,7 +403,7 @@ export const works: Work[] = [
       },
     ],
     images: [
-      { path: 'typoime-vscode.png', alt: 'TypoIME-VSCodeのストアの写真' },
+      { path: 'typoime-vscode.webp', alt: 'TypoIME-VSCodeのストアの写真' },
     ],
     techs: ['VSCode', 'TypeScript'],
     tags: ['個人開発'],
@@ -317,7 +426,7 @@ export const works: Work[] = [
         url: 'https://trap.jp/post/1321/',
       },
     ],
-    images: [{ path: 'linq.png', alt: 'linQサービス画像' }],
+    images: [{ path: 'linq.webp', alt: 'linQサービス画像' }],
     techs: ['Go'],
     tags: ['ハッカソン', 'Web'],
     color: '#E5F6EF',
@@ -335,7 +444,7 @@ export const works: Work[] = [
         url: 'https://github.com/toshi-pono/toshi00-portfolio',
       },
     ],
-    images: [{ path: 'portfolio.png', alt: 'ポートフォリオコンセプト画像' }],
+    images: [{ path: 'portfolio.webp', alt: 'ポートフォリオコンセプト画像' }],
     techs: ['Next.js'],
     tags: ['個人開発', 'Web'],
     color: '#ECF2FB',

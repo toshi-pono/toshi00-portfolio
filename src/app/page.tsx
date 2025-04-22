@@ -27,7 +27,7 @@ export default function Home() {
         <section>
           <Headline title="所属" />
           <ul>
-            <li>東京工業大学 情報工学系 M1</li>
+            <li>東京科学大学 情報工学系 M2</li>
             <li>デジタル創作同好会traP</li>
           </ul>
         </section>
