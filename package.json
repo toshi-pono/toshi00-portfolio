@@ -46,9 +46,6 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
-  "patchedDependencies": {
-    "@splidejs/react-splide": "patches/@splidejs__react-splide.patch"
-  },
   "packageManager": "pnpm@10.11.1",
   "pnpm": {
     "patchedDependencies": {
