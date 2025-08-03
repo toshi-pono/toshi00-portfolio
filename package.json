@@ -6,7 +6,7 @@
     "preinstall": "npx only-allow pnpm",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "serve out",
     "lint": "next lint",
     "pages:build": "pnpm next-on-pages",
     "preview": "pnpm pages:build && wrangler pages dev",
@@ -43,6 +43,7 @@
     "node-fetch": "2.7.0",
     "prettier": "^3.6.2",
     "sass": "^1.89.2",
+    "serve": "^14.2.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
