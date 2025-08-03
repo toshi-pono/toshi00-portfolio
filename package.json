@@ -33,7 +33,7 @@
     "@cloudflare/next-on-pages": "^1.13.12",
     "@eslint/eslintrc": "^3.3.1",
     "@playwright/test": "^1.54.2",
-    "@types/node": "24.0.10",
+    "@types/node": "24.1.0",
     "@types/node-fetch": "^2.6.12",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
