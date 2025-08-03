@@ -6,7 +6,7 @@ settings:
 
 patchedDependencies:
   '@splidejs/react-splide':
-    hash: o3lu7xlr5ldiusvrjwwp6erqlq
+    hash: 56084ff9237be242812cc6eb8d521747194c6f75861b3c632dbd35f5f77cd1fa
     path: patches/@splidejs__react-splide.patch
 
 importers:
@@ -15,7 +15,7 @@ importers:
     dependencies:
       '@splidejs/react-splide':
         specifier: ^0.7.12
-        version: 0.7.12(patch_hash=o3lu7xlr5ldiusvrjwwp6erqlq)
+        version: 0.7.12(patch_hash=56084ff9237be242812cc6eb8d521747194c6f75861b3c632dbd35f5f77cd1fa)
       next:
         specifier: 15.4.5
         version: 15.4.5(@playwright/test@1.54.2)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.89.2)
@@ -2662,7 +2662,6 @@ packages:
 
   path-match@1.2.4:
     resolution: {integrity: sha512-UWlehEdqu36jmh4h5CWJ7tARp1OEVKGHKm6+dg9qMq5RKUTV5WJrGgaZ3dN2m7WFAXDbjlHzvJvL/IUpy84Ktw==}
-    deprecated: This package is archived and no longer maintained. For support, visit https://github.com/expressjs/express/discussions
 
   path-parse@1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
@@ -3243,7 +3242,6 @@ packages:
   wrangler@3.107.0:
     resolution: {integrity: sha512-Rb/fFZDHSiGNQte13Mem0O7oGKs77MfodImB3WbBD+xS0S/fxMYMwuVzkNlOGLBYYnwKx2V2/k8GpK5dJsRLhQ==}
     engines: {node: '>=16.17.0'}
-    deprecated: There is a regression in Wrangler 3.107.0 in which [assets] was not being inherited from the top-level environment. Please downgrade to v3.106.0 for now.
     hasBin: true
     peerDependencies:
       '@cloudflare/workers-types': ^4.20250121.0
@@ -3873,7 +3871,7 @@ snapshots:
 
   '@sinclair/typebox@0.25.24': {}
 
-  '@splidejs/react-splide@0.7.12(patch_hash=o3lu7xlr5ldiusvrjwwp6erqlq)':
+  '@splidejs/react-splide@0.7.12(patch_hash=56084ff9237be242812cc6eb8d521747194c6f75861b3c632dbd35f5f77cd1fa)':
     dependencies:
       '@splidejs/splide': 4.1.4
 
